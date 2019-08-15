@@ -17,7 +17,9 @@ export default class Contact extends Component{
                         <p className="brDesc">Although I'm not currently looking for freelance opportunities, my inbox is always open. Whether for a potential project or just to say hi, I'll try my best to answer your email!
 
                             </p>
-                        <button className="getTouchBtn">Say Hello</button>
+                        <a href="mailto:tabrezdaily007@gmail.com" target="_top">
+                            <button className="getTouchBtn">Say Hello</button>
+                        </a>
                      </div>
                    
 

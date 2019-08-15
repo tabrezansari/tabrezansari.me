@@ -25,8 +25,7 @@
         color: #FFB944;
         font-size: 13px; }
     .aboutContainer .container .devAbout .aboutHead::before {
-      counter-increment: section 1;
-      content: "0" counter(section) ".";
+      content: "02.";
       margin-right: 10px;
       font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
       font-weight: normal;
