@@ -1,9 +1,8 @@
 
 .contactContainer{
     .container{
-        transition-delay: 0.2s;
-        -webkit-animation: devinfoFadein 4s linear forwards;
-        animation: devinfoFadein 4s linear forwards;
+        -webkit-animation: devinfoFadein 2s linear forwards;
+        animation: devinfoFadein 2s linear forwards;
         .devContact{
             max-width: 1000px;
             -webkit-box-pack: center;

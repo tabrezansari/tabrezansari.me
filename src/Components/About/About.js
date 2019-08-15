@@ -22,7 +22,6 @@ export default class About extends Component{
                             </p>
                             </div>
                             <div className="rightDesc">
-                                
                             </div>
                         </div>
                         
