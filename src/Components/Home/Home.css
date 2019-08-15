@@ -1,0 +1,140 @@
+@keyframes vlinc {
+  0% {
+    transform: translateY(100%); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes devinfoFadein {
+  0%, 50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.homeContainer .container {
+  transition-delay: 2.5s;
+  -webkit-animation: devinfoFadein 4s linear forwards;
+  animation: devinfoFadein 4s linear forwards; }
+
+.homeContainer .devInfo {
+  max-width: 1000px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px auto;
+  padding: 120px 0px; }
+  .homeContainer .devInfo .devHi {
+    transition-delay: 200ms;
+    color: #ffb944;
+    font-size: 16px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-weight: normal;
+    margin: 0px 0px 20px 3px; }
+  .homeContainer .devInfo .devName {
+    color: white;
+    font-size: 4rem;
+    line-height: 0px; }
+  .homeContainer .devInfo .devTag {
+    font-size: 80px;
+    line-height: 1.1;
+    color: #8892b0; }
+  .homeContainer .devInfo .devDesc {
+    width: 50%; }
+    .homeContainer .devInfo .devDesc p {
+      color: #8892b0; }
+  .homeContainer .devInfo .moreBtn {
+    color: #FFB944;
+    background-color: transparent;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    line-height: 1;
+    cursor: pointer;
+    font-size: 13px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFB944;
+    border-image: initial;
+    border-radius: 3px;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
+
+.bodyOpen {
+  position: absolute;
+  left: 8rem;
+  top: 8rem;
+  color: gray;
+  font-size: 17px;
+  font-family: 'La Belle Aurore', cursive; }
+
+.bodyClose {
+  position: absolute;
+  left: 8rem;
+  bottom: 2rem;
+  color: gray;
+  font-size: 17px;
+  font-family: 'La Belle Aurore', cursive; }
+
+.pOpen {
+  position: absolute;
+  left: 8rem;
+  top: 12.5rem;
+  color: gray;
+  font-size: 15px;
+  font-family: 'La Belle Aurore', cursive; }
+
+.pClose {
+  position: absolute;
+  left: 20rem;
+  top: 12.5rem;
+  color: gray;
+  font-size: 15px;
+  font-family: 'La Belle Aurore', cursive; }
+
+.p2Open {
+  position: absolute;
+  left: 8rem;
+  top: 28.5rem;
+  color: gray;
+  font-size: 15px;
+  font-family: 'La Belle Aurore', cursive; }
+
+.p2Close {
+  position: absolute;
+  left: 33rem;
+  top: 30rem;
+  color: gray;
+  font-size: 15px;
+  font-family: 'La Belle Aurore', cursive; }
+
+.h1Open {
+  position: absolute;
+  left: 8rem;
+  top: 14.5rem;
+  color: gray;
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive; }
+
+.h1Close {
+  position: absolute;
+  left: 61rem;
+  top: 23.5rem;
+  color: gray;
+  font-size: 16px;
+  font-family: 'La Belle Aurore', cursive; }
+
+.btnOpen {
+  position: absolute;
+  left: 8rem;
+  top: 32.5rem;
+  color: gray;
+  font-size: 15px;
+  font-family: 'La Belle Aurore', cursive; }
+
+.btnClose {
+  position: absolute;
+  left: 17rem;
+  top: 32.5rem;
+  color: gray;
+  font-size: 15px;
+  font-family: 'La Belle Aurore', cursive; }

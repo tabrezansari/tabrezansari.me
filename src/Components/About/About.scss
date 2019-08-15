@@ -1,0 +1,30 @@
+
+.aboutContainer{
+    .container{
+        transition-delay: 1s;
+        -webkit-animation: devinfoFadein 4s linear forwards;
+        animation: devinfoFadein 4s linear forwards;
+        .devAbout{
+            max-width: 1000px;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0px auto;
+            padding: 120px 0px;
+            .aboutHead{
+                position: relative;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                width: 100%;
+                color: white;
+                white-space: nowrap;
+                font-size: 32px;
+                margin: 10px 0px 40px;
+            }
+        } 
+    }
+
+}

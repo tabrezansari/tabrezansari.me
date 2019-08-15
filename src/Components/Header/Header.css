@@ -1,0 +1,69 @@
+@keyframes showTabs {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes FadeInTabs {
+  0% {
+    opacity: 0;
+    transform: scale(0.1); }
+  85% {
+    opacity: 1;
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+
+.header {
+  overflow: hidden;
+  background-color: #0A192F;
+  padding: 20px 10px; }
+  .header a {
+    font-family: 'Roboto Mono', monospace;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 1.5rem;
+    animation: 1s ease-out 0s 1 showTabs; }
+    .header a small {
+      color: #FFB944;
+      font-size: 13px; }
+  .header .resumeBtn {
+    color: #FFB944;
+    background-color: transparent;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    line-height: 1;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 13px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFB944;
+    border-image: initial;
+    border-radius: 3px;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold; }
+  .header a:hover {
+    color: #FFB944; }
+  .header a.active {
+    color: white; }
+  .header .header-right {
+    float: right;
+    padding-right: 2rem; }
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left; }
+    .header .header-right {
+      float: none; } }
