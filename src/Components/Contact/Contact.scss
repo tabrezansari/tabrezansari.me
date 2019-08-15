@@ -1,10 +1,10 @@
 
-.aboutContainer{
+.contactContainer{
     .container{
         transition-delay: 0.2s;
         -webkit-animation: devinfoFadein 4s linear forwards;
         animation: devinfoFadein 4s linear forwards;
-        .devAbout{
+        .devContact{
             max-width: 1000px;
             -webkit-box-pack: center;
             justify-content: center;
@@ -13,7 +13,7 @@
             align-items: flex-start;
             margin: 0px auto;
             padding: 100px 0px;
-            .aboutHead{
+            .contactHead{
                 position: relative;
                 display: flex;
                 -webkit-box-align: center;
@@ -29,9 +29,8 @@
                 }
                 
             }
-            .aboutHead::before {
-                counter-increment: section 1;
-                content: "0" counter(section) ".";
+            .contactHead::before {
+                content: "04.";
                 margin-right: 10px;
                 font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
                 font-weight: normal;
@@ -40,7 +39,7 @@
                 position: relative;
                 top: 3px;
             }
-            .aboutHead::after {
+            .contactHead::after {
                 content: "";
                 display: block;
                 height: 1px;
@@ -50,18 +49,42 @@
                 top: 3px;
                 margin-left: 20px;
             }
-            .info{
-                display: flex;
-                justify-content: space-between;
-                .brDesc{
-                    width: 50%;
-                    -webkit-font-smoothing: antialiased;
-                    background-color: rgb(10, 25, 47);
-                    color: rgb(136, 146, 176);
-                    line-height: 1.5;
-                }
+            .getTouch{
+                font-size: 60px;
+                margin: 0px 0px 20px;
+                font-weight: 600;
+                color: rgb(230, 241, 255);
+                font-family: sans-serif;
+
             }
-        } 
+            .brDesc{
+                width: 50%;
+                -webkit-font-smoothing: antialiased;
+                background-color: rgb(10, 25, 47);
+                color: rgb(136, 146, 176);
+                line-height: 1.5;
+            }
+            .getTouchBtn{
+        
+                    color: #FFB944;
+                    background-color: transparent;
+                    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+                    line-height: 1;
+                    cursor: pointer;
+                    margin-left: 10px;
+                    font-size: 15px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #FFB944;
+                    border-image: initial;
+                    border-radius: 3px;
+                    padding: 1rem 2rem;
+                    text-decoration: none;
+                    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                
+            }
+
+         }
     }
 
 }

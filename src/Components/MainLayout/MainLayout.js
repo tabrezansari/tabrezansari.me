@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import Header from '../Header/Header'
 import Home from '../Home/Home'
 import About from '../About/About'
+import Contact from '../Contact/Contact'
 import './MainLayout.css'
 import $ from 'jquery'
 import { thisExpression } from '@babel/types';
@@ -34,6 +35,12 @@ getAboutView=()=>{
     )
 }
 
+getContactView=()=>{
+    return(
+        <Contact />
+    )
+}
+
 getViews=()=>{
     switch(this.state.viewIndex){
         case 0:
@@ -41,6 +48,9 @@ getViews=()=>{
             break;
         case 1:
             return this.getAboutView();
+            break;
+        case 3:
+            return this.getContactView();
             break;
     }
 }   

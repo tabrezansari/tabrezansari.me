@@ -7,6 +7,7 @@ export default class Home extends Component{
         return(
                <div className="homeContainer">
                 <div className="container">
+                <span className="htmlOpen"> &nbsp;&nbsp;&nbsp;&lt;html&gt;</span>
                  <span className="bodyOpen"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
 
                   <div className="devInfo">
@@ -23,7 +24,7 @@ export default class Home extends Component{
 
                         <span className="p2Open"> &nbsp;&nbsp;&nbsp;&lt;p&gt;</span>  
                             <div className="devDesc">
-                                <p>I'm a software engineer based in Bangalore, B.E specializing in building exceptional, high-quality websites and applications.</p>
+                                <p>I'm a software Developer based in Bangalore, B.E specializing in building exceptional, high-quality websites and applications.</p>
                             </div>
                         <span className="p2Close"> &nbsp;&nbsp;&nbsp;&lt;p/&gt;</span>
 
@@ -32,6 +33,7 @@ export default class Home extends Component{
                          <span className="btnClose"> &nbsp;&nbsp;&nbsp;&lt;btn/&gt;</span>
                   </div>
                   <span className="bodyClose"> &nbsp;&nbsp;&nbsp;&lt;body/&gt;</span>
+                  <span className="htmlClose"> &nbsp;&nbsp;&nbsp;&lt;html/&gt;</span>
 
                </div>
 

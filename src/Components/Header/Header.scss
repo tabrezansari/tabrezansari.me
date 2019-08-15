@@ -8,7 +8,12 @@
       transform: translateY(0);
     }
   }
-
+  @keyframes logoFadein {
+    0%, 50% { opacity: 0; }
+    100% {
+         opacity: 1; }
+       
+  } 
   @keyframes FadeInTabs { 
     0% {
       opacity: 0;
@@ -68,6 +73,15 @@
             font-size: 25px;
             font-weight: bold;
         }
+        .imgLogo{
+          -webkit-animation: 1s logoFadein 1  linear forwards;
+          animation:1s  logoFadein 1 linear forwards;
+          width: 3.5rem;
+          top: 1rem;
+          left: 3.5rem;
+          position: absolute;
+        }
+        
         a:hover {
             color: #FFB944;
         }

@@ -15,7 +15,7 @@
 
 .homeContainer{
 .container{
-    transition-delay: 2.5s;
+    transition-delay: 1s;
     -webkit-animation: devinfoFadein 4s linear forwards;
     animation: devinfoFadein 4s linear forwards;
 }
@@ -27,7 +27,7 @@
     -webkit-box-align: center;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0px auto;
+    margin: 0px 15%;
     padding: 120px 0px;
 
     .devHi{
@@ -78,23 +78,42 @@
 
 .bodyOpen{
     position: absolute;
-    left: 8rem;
-    top: 8rem;
+    left: 7rem;
+    top: 10rem;
     color: gray;
     font-size: 17px;
     font-family: 'La Belle Aurore', cursive;
 }
 .bodyClose{
     position: absolute;
-    left: 8rem;
+    left: 7rem;
+    bottom: 4rem;
+    color: gray;
+    font-size: 17px;
+    font-family: 'La Belle Aurore', cursive;
+}
+
+.htmlOpen{
+    position: absolute;
+    left: 7rem;
+    top: 8rem;
+    color: gray;
+    font-size: 17px;
+    font-family: 'La Belle Aurore', cursive;
+}
+.htmlClose{
+    position: absolute;
+    left: 7rem;
     bottom: 2rem;
     color: gray;
     font-size: 17px;
     font-family: 'La Belle Aurore', cursive;
 }
+
+
 .pOpen{
     position: absolute;
-    left: 8rem;
+    left: 9rem;
     top:12.5rem;
     color: gray;
     font-size: 15px;
@@ -103,7 +122,7 @@
 .pClose{
     position: absolute;
 
-    left: 20rem;
+    left: 21rem;
     top: 12.5rem;
     color: gray;
     font-size: 15px;
@@ -112,7 +131,7 @@
 }
 .p2Open{
     position: absolute;
-    left: 8rem;
+    left: 9rem;
     top:28.5rem;
     color: gray;
     font-size: 15px;
@@ -121,7 +140,7 @@
 .p2Close{
     position: absolute;
 
-    left: 33rem;
+    left: 39rem;
     top: 30rem;
     color: gray;
     font-size: 15px;
@@ -130,7 +149,7 @@
 }
 .h1Open{
     position: absolute;
-    left: 8rem;
+    left: 9rem;
     top:14.5rem;
     color: gray;
     font-size: 16px;
@@ -141,7 +160,7 @@
 
     position: absolute;
 
-    left: 61rem;
+    left: 62rem;
     top: 23.5rem;
     color: gray;
     font-size: 16px;
@@ -149,7 +168,7 @@
 }
 .btnOpen{
     position: absolute;
-    left: 8rem;
+    left: 9rem;
     top:32.5rem;
     color: gray;
     font-size: 15px;
@@ -160,7 +179,7 @@
 .btnClose{
     position: absolute;
 
-    left: 17rem;
+    left: 19rem;
     top: 32.5rem;
     color: gray;
     font-size: 15px;

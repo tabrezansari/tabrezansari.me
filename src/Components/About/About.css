@@ -1,5 +1,5 @@
 .aboutContainer .container {
-  transition-delay: 1s;
+  transition-delay: 0.2s;
   -webkit-animation: devinfoFadein 4s linear forwards;
   animation: devinfoFadein 4s linear forwards; }
   .aboutContainer .container .devAbout {
@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 0px auto;
-    padding: 120px 0px; }
+    padding: 100px 0px; }
     .aboutContainer .container .devAbout .aboutHead {
       position: relative;
       display: flex;
@@ -19,5 +19,36 @@
       width: 100%;
       color: white;
       white-space: nowrap;
-      font-size: 32px;
+      font-size: 25px;
       margin: 10px 0px 40px; }
+      .aboutContainer .container .devAbout .aboutHead small {
+        color: #FFB944;
+        font-size: 13px; }
+    .aboutContainer .container .devAbout .aboutHead::before {
+      counter-increment: section 1;
+      content: "0" counter(section) ".";
+      margin-right: 10px;
+      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+      font-weight: normal;
+      color: #FFB944;
+      font-size: 20px;
+      position: relative;
+      top: 3px; }
+    .aboutContainer .container .devAbout .aboutHead::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 300px;
+      background-color: #2d3952;
+      position: relative;
+      top: 3px;
+      margin-left: 20px; }
+    .aboutContainer .container .devAbout .info {
+      display: flex;
+      justify-content: space-between; }
+      .aboutContainer .container .devAbout .info .brDesc {
+        width: 50%;
+        -webkit-font-smoothing: antialiased;
+        background-color: #0a192f;
+        color: #8892b0;
+        line-height: 1.5; }
