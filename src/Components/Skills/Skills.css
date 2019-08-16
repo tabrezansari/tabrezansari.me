@@ -1,172 +1,450 @@
-.view {
+@-webkit-keyframes move {
+  100% {
+    -webkit-transform: translate3d(0, 0, -1000px);
+            transform: translate3d(0, 0, -1000px);
+  }
+}
 
-    -webkit-perspective: 400;
-            perspective: 400;
+@keyframes move {
+  100% {
+    -webkit-transform: translate3d(0, 0, -1000px);
+            transform: translate3d(0, 0, -1000px);
   }
-  
-  .plane {
-    width: 120px;
-    height: 120px;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-  }
-  .plane.main {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    -webkit-transform: rotateX(60deg) rotateZ(-30deg);
-            transform: rotateX(60deg) rotateZ(-30deg);
-    -webkit-animation: rotate 20s infinite linear;
-            animation: rotate 20s infinite linear;
-  }
-  .plane.main .circle {
-    width: 20rem;
-    height: 20rem;
-    position: absolute;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    border-radius: 100%;
-    box-sizing: border-box;
-    /* box-shadow: 0 0 60px #8791AF, inset 0 0 60px #8791AF; */
-  }
-  .plane.main .circle::before, .plane.main .circle::after {
-    display: inline-block;
-      width: 45px;
-      height: 45px;
-      content: "";
-      /* padding-right: 10px; */
-      background-position: center;
-      background-size: 40px 40px;
+}
+.container {
+
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.bubble-wrap {
+  margin: 0 10rem;
+  width: 100%;
+
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+.bubble {
+  background-position: center;
       background-repeat: no-repeat;
-      
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+      display: inline-block;
+  position: absolute;
+  background-size: 130px 130px;
   
-    border-radius: 100%;
-    box-sizing: border-box;
-    /* box-shadow: 0 0 60px 2px #8791AF; */
-  }
-  .plane.main .circle:nth-child(1)::before{
-    background-image: url('../../Assets/logo/css.png');}
-    .plane.main .circle:nth-child(2)::before{
-    background-image: url('../../Assets/logo/hmtl.png');}
-    .plane.main .circle:nth-child(3)::before{
-    background-image: url('../../Assets/logo/angular.png');}
-    .plane.main .circle:nth-child(4)::before{
-    background-image: url('../../Assets/logo/react.png');}
-    .plane.main .circle:nth-child(5)::before{
-    background-image: url('../../Assets/logo/js.png');}
-    .plane.main .circle:nth-child(6)::before{
-    background-image: url('../../Assets/logo/php.png');}
-    .plane.main .circle:nth-child(7)::before{
-    background-image: url('../../Assets/logo/babel.png');}
-    .plane.main .circle:nth-child(8)::before{
-    background-image: url('../../Assets/logo/git.png');}
-    .plane.main .circle:nth-child(9)::before{
-    background-image: url('../../Assets/logo/java.png');}
-    .plane.main .circle:nth-child(10)::before{
-    background-image: url('../../Assets/logo/sasss.png');}
-  
-    .plane.main .circle:nth-child(1)::after{
-    background-image: url('../../Assets/logo/laravel.png');}
-    .plane.main .circle:nth-child(2)::after{
-    background-image: url('../../Assets/logo/lodash.png');}
-    .plane.main .circle:nth-child(3)::after{
-    background-image: url('../../Assets/logo/aws.png');}
-    .plane.main .circle:nth-child(4)::after{
-    background-image: url('../../Assets/logo/docker.png');}
-    .plane.main .circle:nth-child(5)::after{
-    background-image: url('../../Assets/logo/react.png');}
-    .plane.main .circle:nth-child(6)::after{
-    background-image: url('../../Assets/logo/jquery.png');}
-    .plane.main .circle:nth-child(7)::after{
-    background-image: url('../../Assets/logo/webpack.png');}
-    .plane.main .circle:nth-child(8)::after{
-    background-image: url('../../Assets/logo/gitlab.png');}
-    .plane.main .circle:nth-child(9)::after{
-    background-image: url('../../Assets/logo/json.png');}
-    .plane.main .circle:nth-child(10)::after{
-    background-image: url('../../Assets/logo/git.png');}
-  
-  .plane.main .circle::before {
-    -webkit-transform: translateZ(-90px);
-            transform: translateZ(-90px);
-  }
-  .plane.main .circle::after {
-    -webkit-transform: translateZ(90px);
-            transform: translateZ(90px);
-  }
-  .plane.main .circle:nth-child(1) {
-    -webkit-transform: rotateZ(36deg) rotateX(63.435deg);
-            transform: rotateZ(36deg) rotateX(63.435deg);
-  }
-  .plane.main .circle:nth-child(2) {
-    -webkit-transform: rotateZ(72deg) rotateX(63.435deg);
-            transform: rotateZ(72deg) rotateX(63.435deg);
-  }
-  .plane.main .circle:nth-child(3) {
-    -webkit-transform: rotateZ(108deg) rotateX(63.435deg);
-            transform: rotateZ(108deg) rotateX(63.435deg);
-  }
-  .plane.main .circle:nth-child(4) {
-    -webkit-transform: rotateZ(144deg) rotateX(63.435deg);
-            transform: rotateZ(144deg) rotateX(63.435deg);
-  }
-  .plane.main .circle:nth-child(5) {
-    -webkit-transform: rotateZ(180deg) rotateX(63.435deg);
-            transform: rotateZ(180deg) rotateX(63.435deg);
-  }
-  .plane.main .circle:nth-child(6) {
-    -webkit-transform: rotateZ(216deg) rotateX(63.435deg);
-            transform: rotateZ(216deg) rotateX(63.435deg);
-  }
-  
-  .plane.main .circle:nth-child(7) {
-    -webkit-transform: rotateZ(252deg) rotateX(63.435deg);
-            transform: rotateZ(252deg) rotateX(63.435deg);
-  }
-  
-  .plane.main .circle:nth-child(7) {
-    -webkit-transform: rotateZ(288deg) rotateX(63.435deg);
-            transform: rotateZ(288deg) rotateX(63.435deg);
-  }
-  
-  .plane.main .circle:nth-child(9) {
-    -webkit-transform: rotateZ(324deg) rotateX(63.435deg);
-            transform: rotateZ(324deg) rotateX(63.435deg);
-  }
-  
-  .plane.main .circle:nth-child(10) {
-    -webkit-transform: rotateZ(360deg) rotateX(63.435deg);
-            transform: rotateZ(360deg) rotateX(63.435deg);
-  }
-  
-  
-  @-webkit-keyframes rotate {
-    0% {
-      -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
-              transform: rotateX(0) rotateY(0) rotateZ(0);
-    }
-    100% {
-      -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-              transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-    }
-  }
-  
-  @keyframes rotate {
-    0% {
-      -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
-              transform: rotateX(0) rotateY(0) rotateZ(0);
-    }
-    100% {
-      -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-              transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-    }
-  }
+  opacity: .8;
+  border-radius: 50%;
+  -webkit-animation: move 3s infinite;
+          animation: move 3s infinite;
+}
+
+
+
+.bubble:nth-child(1) {
+  height: 150px;
+  width: 150px;
+  background-image: url("../../Assets/logo/lodash.png");
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+  -webkit-transform: translate3d(357px, 672px, 1230px);
+          transform: translate3d(357px, 672px, 1230px);
+}
+
+.bubble:nth-child(2) {
+  height: 30px;
+  width: 30px;
+  background-image: url("../../Assets/logo/laravel.png");
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+  -webkit-transform: translate3d(13px, 871px, 268px);
+          transform: translate3d(13px, 871px, 268px);
+}
+
+.bubble:nth-child(3) {
+  height: 150px;
+  width: 150px;
+  background-image: url("../../Assets/logo/json.png");
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+  -webkit-transform: translate3d(224px, 223px, 1614px);
+          transform: translate3d(224px, 223px, 1614px);
+}
+
+.bubble:nth-child(4) {
+  height: 16px;
+  width: 16px;
+  background-image: url("../../Assets/logo/babel.png");
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+  -webkit-transform: translate3d(257px, 721px, 539px);
+          transform: translate3d(257px, 721px, 539px);
+}
+
+.bubble:nth-child(5) {
+  height: 47px;
+  width: 47px;
+  background-image: url("../../Assets/logo/webpack.png");
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+  -webkit-transform: translate3d(379px, 659px, 577px);
+          transform: translate3d(379px, 659px, 577px);
+}
+
+.bubble:nth-child(6) {
+  height: 150px;
+  width: 150px;
+  background-image: url("../../Assets/logo/sasss.png");
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  -webkit-transform: translate3d(667px, 642px, 768px);
+          transform: translate3d(667px, 642px, 768px);
+}
+
+.bubble:nth-child(7) {
+  height: 138px;
+  width: 138px;
+  background-image: url("../../Assets/logo/node.png");
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+  -webkit-transform: translate3d(460px, 119px, 1923px);
+          transform: translate3d(460px, 119px, 1923px);
+}
+
+.bubble:nth-child(8) {
+  height: 30px;
+  width: 30px;
+  background-image: url("../../Assets/logo/gitlab.png");
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+  -webkit-transform: translate3d(120px, 178px, 1348px);
+          transform: translate3d(120px, 178px, 1348px);
+}
+
+.bubble:nth-child(9) {
+  height: 150px;
+  width: 150px;
+  background-image: url("../../Assets/logo/aws.png");
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+  -webkit-transform: translate3d(234px, 276px, 358px);
+          transform: translate3d(234px, 276px, 358px);
+}
+
+.bubble:nth-child(10) {
+  height: 135px;
+  width: 135px;
+  background-image: url("../../Assets/logo/git.png");
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  -webkit-transform: translate3d(243px, 249px, 1150px);
+          transform: translate3d(243px, 249px, 1150px);
+}
+
+.bubble:nth-child(11) {
+  height: 15px;
+  width: 15px;
+  background-image: url("../../Assets/logo/docker.png");
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+  -webkit-transform: translate3d(207px, 781px, 1125px);
+          transform: translate3d(207px, 781px, 1125px);
+}
+
+.bubble:nth-child(12) {
+  height: 150px;
+  width: 150px;
+  background-image: url("../../Assets/logo/php.png");
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+  -webkit-transform: translate3d(898px, 947px, 1337px);
+          transform: translate3d(898px, 947px, 1337px);
+}
+
+.bubble:nth-child(13) {
+  height: 55px;
+  width: 55px;
+  background-image: url("../../Assets/logo/angular.png");
+  -webkit-animation-delay: -1.3s;
+          animation-delay: -1.3s;
+  -webkit-transform: translate3d(417px, 544px, 1704px);
+          transform: translate3d(417px, 544px, 1704px);
+}
+
+.bubble:nth-child(14) {
+  height: 69px;
+  width: 69px;
+  background-image: url("../../Assets/logo/java.png");
+  -webkit-animation-delay: -1.4s;
+          animation-delay: -1.4s;
+  -webkit-transform: translate3d(968px, 275px, 24px);
+          transform: translate3d(968px, 275px, 24px);
+}
+
+.bubble:nth-child(15) {
+  height: 150px;
+  width: 150px;
+  background-image: url("../../Assets/logo/jquery.png");
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+  -webkit-transform: translate3d(621px, 294px, 1716px);
+          transform: translate3d(621px, 294px, 1716px);
+}
+
+.bubble:nth-child(16) {
+  height: 56px;
+  width: 56px;
+  background-image: url("../../Assets/logo/js.png");
+  -webkit-animation-delay: -1.6s;
+          animation-delay: -1.6s;
+  -webkit-transform: translate3d(49px, 713px, 59px);
+          transform: translate3d(49px, 713px, 59px);
+}
+
+.bubble:nth-child(17) {
+  height: 41px;
+  width: 41px;
+  background-image: url("../../Assets/logo/hmtl.png");
+  -webkit-animation-delay: -1.7s;
+          animation-delay: -1.7s;
+  -webkit-transform: translate3d(74px, 205px, 171px);
+          transform: translate3d(74px, 205px, 171px);
+}
+
+.bubble:nth-child(18) {
+  height: 150px;
+  width: 150px;
+  background-image: url(../../Assets/logo/css.png);
+  -webkit-animation-delay: -1.8s;
+          animation-delay: -1.8s;
+  -webkit-transform: translate3d(35px, 176px, 62px);
+          transform: translate3d(35px, 176px, 62px);
+}
+
+.bubble:nth-child(19) {
+  height: 150px;
+  width: 150px;
+  background-image: url('../../Assets/logo/css.png');
+  -webkit-animation-delay: -1.9s;
+          animation-delay: -1.9s;
+  -webkit-transform: translate3d(315px, 756px, 734px);
+          transform: translate3d(315px, 756px, 734px);
+}
+
+.bubble:nth-child(20) {
+  height: 150px;
+  width: 150px;
+  background-image: url('../../Assets/logo/react.png');
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-transform: translate3d(93px, 613px, 98px);
+          transform: translate3d(93px, 613px, 98px);
+}
+
+
+
+
+
+.bubble:nth-child(21) {
+  height: 20px;
+  width: 20px;
+  background-image: url("../../Assets/logo/lodash.png");
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+  -webkit-transform: translate3d(357px, 672px, 1230px);
+          transform: translate3d(357px, 672px, 1230px);
+}
+
+.bubble:nth-child(22) {
+  height: 44px;
+  width: 44px;
+  background-image: url("../../Assets/logo/laravel.png");
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+  -webkit-transform: translate3d(13px, 871px, 268px);
+          transform: translate3d(13px, 871px, 268px);
+}
+
+.bubble:nth-child(23) {
+  height: 12px;
+  width: 12px;
+  background-image: url("../../Assets/logo/json.png");
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+  -webkit-transform: translate3d(224px, 223px, 1614px);
+          transform: translate3d(224px, 223px, 1614px);
+}
+
+.bubble:nth-child(24) {
+  height: 16px;
+  width: 16px;
+  background-image: url("../../Assets/logo/babel.png");
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+  -webkit-transform: translate3d(257px, 721px, 539px);
+          transform: translate3d(257px, 721px, 539px);
+}
+
+.bubble:nth-child(25) {
+  height: 150px;
+  width: 150px;
+  background-image: url("../../Assets/logo/webpack.png");
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+  -webkit-transform: translate3d(379px, 659px, 577px);
+          transform: translate3d(379px, 659px, 577px);
+}
+
+.bubble:nth-child(26) {
+  height: 70px;
+  width: 70px;
+  background-image: url("../../Assets/logo/sasss.png");
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  -webkit-transform: translate3d(667px, 642px, 768px);
+          transform: translate3d(667px, 642px, 768px);
+}
+
+.bubble:nth-child(27) {
+  height: 138px;
+  width: 138px;
+  background-image: url("../../Assets/logo/node.png");
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+  -webkit-transform: translate3d(460px, 119px, 1923px);
+          transform: translate3d(460px, 119px, 1923px);
+}
+
+.bubble:nth-child(28) {
+  height: 150px;
+  width: 150px;
+  background-image: url("../../Assets/logo/gitlab.png");
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+  -webkit-transform: translate3d(120px, 178px, 1348px);
+          transform: translate3d(120px, 178px, 1348px);
+}
+
+.bubble:nth-child(29) {
+  height: 44px;
+  width: 44px;
+  background-image: url("../../Assets/logo/aws.png");
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+  -webkit-transform: translate3d(234px, 276px, 358px);
+          transform: translate3d(234px, 276px, 358px);
+}
+
+.bubble:nth-child(10) {
+  height: 135px;
+  width: 135px;
+  background-image: url("../../Assets/logo/git.png");
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  -webkit-transform: translate3d(243px, 249px, 1150px);
+          transform: translate3d(243px, 249px, 1150px);
+}
+
+.bubble:nth-child(31) {
+  height: 150px;
+  width: 150px;
+  background-image: url("../../Assets/logo/docker.png");
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+  -webkit-transform: translate3d(207px, 781px, 1125px);
+          transform: translate3d(207px, 781px, 1125px);
+}
+
+.bubble:nth-child(32) {
+  height: 150px;
+  width: 150px;
+  background-image: url("../../Assets/logo/php.png");
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+  -webkit-transform: translate3d(898px, 947px, 1337px);
+          transform: translate3d(898px, 947px, 1337px);
+}
+
+.bubble:nth-child(33) {
+  height: 150px;
+  width: 150px;
+  background-image: url("../../Assets/logo/angular.png");
+  -webkit-animation-delay: -1.3s;
+          animation-delay: -1.3s;
+  -webkit-transform: translate3d(417px, 544px, 1704px);
+          transform: translate3d(417px, 544px, 1704px);
+}
+
+.bubble:nth-child(34) {
+  height: 55px;
+  width: 55px;
+  background-image: url("../../Assets/logo/java.png");
+  -webkit-animation-delay: -1.4s;
+          animation-delay: -1.4s;
+  -webkit-transform: translate3d(968px, 275px, 24px);
+          transform: translate3d(968px, 275px, 24px);
+}
+
+.bubble:nth-child(35) {
+  height: 150px;
+  width: 150px;
+  background-image: url("../../Assets/logo/jquery.png");
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+  -webkit-transform: translate3d(621px, 294px, 1716px);
+          transform: translate3d(621px, 294px, 1716px);
+}
+
+.bubble:nth-child(36) {
+  height: 56px;
+  width: 56px;
+  background-image: url("../../Assets/logo/js.png");
+  -webkit-animation-delay: -1.6s;
+          animation-delay: -1.6s;
+  -webkit-transform: translate3d(49px, 713px, 59px);
+          transform: translate3d(49px, 713px, 59px);
+}
+
+.bubble:nth-child(37) {
+  height: 41px;
+  width: 41px;
+  background-image: url("../../Assets/logo/hmtl.png");
+  -webkit-animation-delay: -1.7s;
+          animation-delay: -1.7s;
+  -webkit-transform: translate3d(74px, 205px, 171px);
+          transform: translate3d(74px, 205px, 171px);
+}
+
+.bubble:nth-child(38) {
+  height: 150px;
+  width: 150px;
+  background-image: url('../../Assets/logo/css.png');
+  -webkit-animation-delay: -1.8s;
+          animation-delay: -1.8s;
+  -webkit-transform: translate3d(35px, 176px, 62px);
+          transform: translate3d(35px, 176px, 62px);
+}
+
+.bubble:nth-child(39) {
+  height: 29px;
+  width: 29px;
+  background-image: url('../../Assets/logo/css.png');
+  -webkit-animation-delay: -1.9s;
+          animation-delay: -1.9s;
+  -webkit-transform: translate3d(315px, 756px, 734px);
+          transform: translate3d(315px, 756px, 734px);
+}
+
+.bubble:nth-child(40) {
+  height: 150px;
+  width: 150px;
+  background-image: url('../../Assets/logo/react.png');
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-transform: translate3d(93px, 613px, 98px);
+          transform: translate3d(93px, 613px, 98px);
+}
+
