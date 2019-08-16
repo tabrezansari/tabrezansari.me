@@ -17,6 +17,7 @@ export default class Skills extends Component{
                     <div className="circle"></div>
                     <div className="circle"></div>
                     <div className="circle"></div>
+                    
                     </div>
                     </div>
                </div>

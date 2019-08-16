@@ -15,10 +15,10 @@ this.props.viewHandler(index);
                 <img className="imgLogo" src={tabrez} />
 
                 <div className="header-right">
-                    <a  href="#home" onClick={()=>this.setViewIndex(0)}><small>01.</small> Home</a>
-                    <a  href="#home" onClick={()=>this.setViewIndex(1)}><small>02.</small> About</a>
-                    <a href="#about" onClick={()=>this.setViewIndex(2)}><small>03.</small> Work</a>
-                    <a href="#about"  onClick={()=>this.setViewIndex(3)}><small>04.</small> Contact</a>
+                    <a  onClick={()=>this.setViewIndex(0)}><small>01.</small> Home</a>
+                    <a   onClick={()=>this.setViewIndex(1)}><small>02.</small> About</a>
+                    <a  onClick={()=>this.setViewIndex(2)}><small>03.</small> Work</a>
+                    <a  onClick={()=>this.setViewIndex(3)}><small>04.</small> Contact</a>
                     <a href={Resume} target="_blank" className="resumeBtn">RESUME</a>
 
 
