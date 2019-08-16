@@ -29,6 +29,7 @@
   .header a {
     font-family: 'Roboto Mono', monospace;
     float: left;
+    cursor: pointer;
     color: white;
     text-align: center;
     padding: 10px;
