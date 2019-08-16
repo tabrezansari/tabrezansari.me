@@ -51,13 +51,19 @@
             .info{
                 display: flex;
                 justify-content: space-between;
-                .brDesc{
+                .leftDesc{
                     width: 50%;
-                    -webkit-font-smoothing: antialiased;
-                    background-color: rgb(10, 25, 47);
-                    color: rgb(136, 146, 176);
-                    line-height: 1.5;
+                    .brDesc{
+                        -webkit-font-smoothing: antialiased;
+                        background-color: rgb(10, 25, 47);
+                        color: rgb(136, 146, 176);
+                        line-height: 1.5;
+                    }
                 }
+                .rightDesc{
+                    width: 50%;
+                }
+               
             }
         } 
     }

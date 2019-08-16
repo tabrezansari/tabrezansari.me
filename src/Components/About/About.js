@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import './About.css'
+import Skills from '../Skills/Skills'
 import $ from 'jquery'
 export default class About extends Component{
 
@@ -22,6 +23,7 @@ export default class About extends Component{
                             </p>
                             </div>
                             <div className="rightDesc">
+                                <Skills/>
                             </div>
                         </div>
                         

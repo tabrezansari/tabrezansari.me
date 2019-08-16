@@ -1,0 +1,171 @@
+.view {
+
+    -webkit-perspective: 400;
+            perspective: 400;
+  }
+  
+  .plane {
+    width: 120px;
+    height: 120px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  .plane.main {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transform: rotateX(60deg) rotateZ(-30deg);
+            transform: rotateX(60deg) rotateZ(-30deg);
+    -webkit-animation: rotate 20s infinite linear;
+            animation: rotate 20s infinite linear;
+  }
+  .plane.main .circle {
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    border-radius: 100%;
+    box-sizing: border-box;
+    /* box-shadow: 0 0 60px #8791AF, inset 0 0 60px #8791AF; */
+  }
+  .plane.main .circle::before, .plane.main .circle::after {
+    display: inline-block;
+      width: 45px;
+      height: 45px;
+      content: "";
+      /* padding-right: 10px; */
+      background-position: center;
+      background-size: 40px 40px;
+      background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  
+    border-radius: 100%;
+    box-sizing: border-box;
+    /* box-shadow: 0 0 60px 2px #8791AF; */
+  }
+  .plane.main .circle:nth-child(1)::before{
+    background-image: url('../../Assets/logo/css.png');}
+    .plane.main .circle:nth-child(2)::before{
+    background-image: url('../../Assets/logo/hmtl.png');}
+    .plane.main .circle:nth-child(3)::before{
+    background-image: url('../../Assets/logo/angular.png');}
+    .plane.main .circle:nth-child(4)::before{
+    background-image: url('../../Assets/logo/react.png');}
+    .plane.main .circle:nth-child(5)::before{
+    background-image: url('../../Assets/logo/js.png');}
+    .plane.main .circle:nth-child(6)::before{
+    background-image: url('../../Assets/logo/php.png');}
+    .plane.main .circle:nth-child(7)::before{
+    background-image: url('../../Assets/logo/babel.png');}
+    .plane.main .circle:nth-child(8)::before{
+    background-image: url('../../Assets/logo/git.png');}
+    .plane.main .circle:nth-child(9)::before{
+    background-image: url('../../Assets/logo/java.png');}
+    .plane.main .circle:nth-child(10)::before{
+    background-image: url('../../Assets/logo/sasss.png');}
+  
+    .plane.main .circle:nth-child(1)::after{
+    background-image: url('../../Assets/logo/laravel.png');}
+    .plane.main .circle:nth-child(2)::after{
+    background-image: url('../../Assets/logo/lodash.png');}
+    .plane.main .circle:nth-child(3)::after{
+    background-image: url('../../Assets/logo/aws.png');}
+    .plane.main .circle:nth-child(4)::after{
+    background-image: url('../../Assets/logo/docker.png');}
+    .plane.main .circle:nth-child(5)::after{
+    background-image: url('../../Assets/logo/react.png');}
+    .plane.main .circle:nth-child(6)::after{
+    background-image: url('../../Assets/logo/jquery.png');}
+    .plane.main .circle:nth-child(7)::after{
+    background-image: url('../../Assets/logo/webpack.png');}
+    .plane.main .circle:nth-child(8)::after{
+    background-image: url('../../Assets/logo/gitlab.png');}
+    .plane.main .circle:nth-child(9)::after{
+    background-image: url('../../Assets/logo/json.png');}
+    .plane.main .circle:nth-child(10)::after{
+    background-image: url('../../Assets/logo/git.png');}
+  
+  .plane.main .circle::before {
+    -webkit-transform: translateZ(-90px);
+            transform: translateZ(-90px);
+  }
+  .plane.main .circle::after {
+    -webkit-transform: translateZ(90px);
+            transform: translateZ(90px);
+  }
+  .plane.main .circle:nth-child(1) {
+    -webkit-transform: rotateZ(36deg) rotateX(63.435deg);
+            transform: rotateZ(36deg) rotateX(63.435deg);
+  }
+  .plane.main .circle:nth-child(2) {
+    -webkit-transform: rotateZ(72deg) rotateX(63.435deg);
+            transform: rotateZ(72deg) rotateX(63.435deg);
+  }
+  .plane.main .circle:nth-child(3) {
+    -webkit-transform: rotateZ(108deg) rotateX(63.435deg);
+            transform: rotateZ(108deg) rotateX(63.435deg);
+  }
+  .plane.main .circle:nth-child(4) {
+    -webkit-transform: rotateZ(144deg) rotateX(63.435deg);
+            transform: rotateZ(144deg) rotateX(63.435deg);
+  }
+  .plane.main .circle:nth-child(5) {
+    -webkit-transform: rotateZ(180deg) rotateX(63.435deg);
+            transform: rotateZ(180deg) rotateX(63.435deg);
+  }
+  .plane.main .circle:nth-child(6) {
+    -webkit-transform: rotateZ(216deg) rotateX(63.435deg);
+            transform: rotateZ(216deg) rotateX(63.435deg);
+  }
+  
+  .plane.main .circle:nth-child(7) {
+    -webkit-transform: rotateZ(252deg) rotateX(63.435deg);
+            transform: rotateZ(252deg) rotateX(63.435deg);
+  }
+  
+  .plane.main .circle:nth-child(7) {
+    -webkit-transform: rotateZ(288deg) rotateX(63.435deg);
+            transform: rotateZ(288deg) rotateX(63.435deg);
+  }
+  
+  .plane.main .circle:nth-child(9) {
+    -webkit-transform: rotateZ(324deg) rotateX(63.435deg);
+            transform: rotateZ(324deg) rotateX(63.435deg);
+  }
+  
+  .plane.main .circle:nth-child(10) {
+    -webkit-transform: rotateZ(360deg) rotateX(63.435deg);
+            transform: rotateZ(360deg) rotateX(63.435deg);
+  }
+  
+  
+  @-webkit-keyframes rotate {
+    0% {
+      -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+              transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+      -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+              transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+              transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+      -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+              transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+  }
