@@ -19,7 +19,7 @@ export default class Home extends Component{
                         <span className="h1Open"> &nbsp;&nbsp;&nbsp;&lt;h1&gt;</span>
                             <h1 className="devName">Tabrez Ansari</h1>                      
 
-                            <h1 className="devTag">I build things for web</h1>
+                            <h1 className="devTag">I'm a Software Developer</h1>
                          <span className="h1Close"> &nbsp;&nbsp;&nbsp;&lt;/h1&gt;</span>
 
                         <span className="p2Open"> &nbsp;&nbsp;&nbsp;&lt;p&gt;</span>  

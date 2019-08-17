@@ -3,7 +3,7 @@ import Header from '../Header/Header'
 import Home from '../Home/Home'
 import About from '../About/About'
 import Contact from '../Contact/Contact'
-import Work from '../Work/Work'
+import Experience from '../Experience/Experience'
 import './MainLayout.css'
 import $ from 'jquery'
 import { thisExpression } from '@babel/types';
@@ -30,9 +30,9 @@ getHomeView=()=>{
     )
 }
 
-getWorkView=()=>{
+getExperienceView=()=>{
     return(
-        <Work/>
+        <Experience/>
     )
 }
 
@@ -57,7 +57,7 @@ getViews=()=>{
             return this.getAboutView();
             break;
         case 2:
-            return this.getWorkView();
+            return this.getExperienceView();
             break;
         case 3:
             return this.getContactView();

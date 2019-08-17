@@ -9,6 +9,9 @@
     background-color: #0A192F;
     width: 100%; }
 
+button:focus {
+  outline: 0; }
+
 .leftSocial {
   width: 40px;
   position: fixed;

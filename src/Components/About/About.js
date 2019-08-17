@@ -22,7 +22,7 @@ export default class About extends Component{
 
                             <div className="leftDesc">
                              <p className="brDesc">
-                             Hello! I'm Tabrez Ansari, a software Developer based in Bangalore, BE who enjoys building things that live on the internet or for the desktop. I develop exceptional desktop,mobile,and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.
+                             Hello! I'm Tabrez Ansari, a software Developer based in Bangalore, BE who enjoys building things  for Web ,Mobile and desktop. I develop exceptional desktop,mobile,and web apps .
 
                             </p>
                             <p className="brDesc">

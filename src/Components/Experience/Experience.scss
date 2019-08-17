@@ -1,0 +1,185 @@
+
+.expContainer{
+    .container{
+        -webkit-animation: devinfoFadein 2s linear forwards;
+        animation: devinfoFadein 2s linear forwards;
+        .devExp{
+            max-width: 1000px;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0px 15%;
+            padding: 100px 0px;
+            .expHead{
+                position: relative;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                width: 100%;
+                color: white;
+                white-space: nowrap;
+                font-size: 25px;
+                margin: 10px 0px 40px;
+                small{
+                    color: #FFB944;
+                    font-size: 13px;
+                }
+                
+            }
+            .expHead::before {
+                content: "03.";
+                margin-right: 10px;
+                font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+                font-weight: normal;
+                color: #FFB944;
+                font-size: 20px;
+                position: relative;
+                top: 3px;
+            }
+            .expHead::after {
+                content: "";
+                display: block;
+                height: 1px;
+                width: 300px;
+                background-color: rgb(45, 57, 82);
+                position: relative;
+                top: 3px;
+                margin-left: 20px;
+            }
+            .getTouch{
+                font-size: 60px;
+                margin: 0px 0px 20px;
+                font-weight: 600;
+                color: rgb(230, 241, 255);
+                font-family: sans-serif;
+
+            }
+            .brDesc{
+                width: 50%;
+                -webkit-font-smoothing: antialiased;
+                background-color: rgb(10, 25, 47);
+                color: rgb(136, 146, 176);
+                line-height: 1.5;
+                margin-top: 2rem;
+
+            }
+            .getTouchBtn{
+        
+                    color: #FFB944;
+                    background-color: transparent;
+                    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+                    line-height: 1;
+                    cursor: pointer;
+                    margin-top: 2rem;
+                    margin-left: 10px;
+                    font-size: 15px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #FFB944;
+                    border-image: initial;
+                    border-radius: 3px;
+                    padding: 1rem 2rem;
+                    text-decoration: none;
+                    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                
+            }
+            .expTabs{
+                width: 50%;
+                ul{
+                    list-style: none;
+                    color: white;
+                    display: flex;
+                    li{
+                        button{
+                            border: none;
+                            text-decoration-skip-ink: auto;
+                            position: relative;
+                            cursor: pointer;
+                            display: flex;
+                            -webkit-box-align: center;
+                            align-items: center;
+                            width: 100%;
+                            background-color: transparent;
+                            height: 42px;
+                            text-align: left;
+                            white-space: nowrap;
+                            font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+                            font-size: 13px;
+                            color: rgb(96, 106, 134);
+                            text-decoration: none;
+                            padding: 0px 15px 2px;
+                            transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                            border: 2px solid rgb(51, 63, 88);
+                            border-left: none;
+                            
+                        }
+                        .activeTab{
+                            border: 2px solid #FFB944;;   
+                            color: #FFB944; 
+                        }
+                        button:hover{
+                            background-color: #2940635e;
+                            color: #FFB944; 
+                        }
+                    }
+                }
+            }
+                .jobDesc{
+                    padding: 0px 40px;
+                    color: white;
+                    h4{
+                        color: rgb(204, 214, 246);
+                        margin-bottom: 5px;
+                        font-size: 22px;
+                        font-weight: 500;
+                        span{
+                            color: #fcb745;
+                        }
+                    }
+                    h5{
+                        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+                        font-size: 13px;
+                        font-weight: normal;
+                        letter-spacing: 0.5px;
+                        color: rgb(168, 178, 209);
+                    
+                    }
+                    .jobBrDesc{
+                        width: 70%;
+                        
+                        ul{
+                            font-size: 16px;
+                            padding: 0px;
+                            margin: 0px;
+                            list-style: none;
+                            li{
+                                position: relative;
+                                padding-left: 25px;
+                                margin-bottom: 10px;
+                                color: rgb(136, 146, 176);
+                                line-height: 1.3;
+                                font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+
+                            }
+                            li::before{
+                                content: "▹";
+                                position: absolute;
+                                left: 0px;
+                                color: #FFB944; 
+                                line-height: 20px;
+                                
+                            }
+                        }
+                    }
+                }
+                    
+                
+
+            
+
+         }
+    }
+
+}

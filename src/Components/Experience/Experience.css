@@ -1,0 +1,143 @@
+@charset "UTF-8";
+.expContainer .container {
+  -webkit-animation: devinfoFadein 2s linear forwards;
+  animation: devinfoFadein 2s linear forwards; }
+  .expContainer .container .devExp {
+    max-width: 1000px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 15%;
+    padding: 100px 0px; }
+    .expContainer .container .devExp .expHead {
+      position: relative;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      width: 100%;
+      color: white;
+      white-space: nowrap;
+      font-size: 25px;
+      margin: 10px 0px 40px; }
+      .expContainer .container .devExp .expHead small {
+        color: #FFB944;
+        font-size: 13px; }
+    .expContainer .container .devExp .expHead::before {
+      content: "03.";
+      margin-right: 10px;
+      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+      font-weight: normal;
+      color: #FFB944;
+      font-size: 20px;
+      position: relative;
+      top: 3px; }
+    .expContainer .container .devExp .expHead::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 300px;
+      background-color: #2d3952;
+      position: relative;
+      top: 3px;
+      margin-left: 20px; }
+    .expContainer .container .devExp .getTouch {
+      font-size: 60px;
+      margin: 0px 0px 20px;
+      font-weight: 600;
+      color: #e6f1ff;
+      font-family: sans-serif; }
+    .expContainer .container .devExp .brDesc {
+      width: 50%;
+      -webkit-font-smoothing: antialiased;
+      background-color: #0a192f;
+      color: #8892b0;
+      line-height: 1.5;
+      margin-top: 2rem; }
+    .expContainer .container .devExp .getTouchBtn {
+      color: #FFB944;
+      background-color: transparent;
+      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+      line-height: 1;
+      cursor: pointer;
+      margin-top: 2rem;
+      margin-left: 10px;
+      font-size: 15px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #FFB944;
+      border-image: initial;
+      border-radius: 3px;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
+    .expContainer .container .devExp .expTabs {
+      width: 50%; }
+      .expContainer .container .devExp .expTabs ul {
+        list-style: none;
+        color: white;
+        display: flex; }
+        .expContainer .container .devExp .expTabs ul li button {
+          border: none;
+          text-decoration-skip-ink: auto;
+          position: relative;
+          cursor: pointer;
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+          width: 100%;
+          background-color: transparent;
+          height: 42px;
+          text-align: left;
+          white-space: nowrap;
+          font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+          font-size: 13px;
+          color: #606a86;
+          text-decoration: none;
+          padding: 0px 15px 2px;
+          transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+          border: 2px solid #333f58;
+          border-left: none; }
+        .expContainer .container .devExp .expTabs ul li .activeTab {
+          border: 2px solid #FFB944;
+          color: #FFB944; }
+        .expContainer .container .devExp .expTabs ul li button:hover {
+          background-color: #2940635e;
+          color: #FFB944; }
+    .expContainer .container .devExp .jobDesc {
+      padding: 0px 40px;
+      color: white; }
+      .expContainer .container .devExp .jobDesc h4 {
+        color: #ccd6f6;
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-weight: 500; }
+        .expContainer .container .devExp .jobDesc h4 span {
+          color: #fcb745; }
+      .expContainer .container .devExp .jobDesc h5 {
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+        font-size: 13px;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+        color: #a8b2d1; }
+      .expContainer .container .devExp .jobDesc .jobBrDesc {
+        width: 70%; }
+        .expContainer .container .devExp .jobDesc .jobBrDesc ul {
+          font-size: 16px;
+          padding: 0px;
+          margin: 0px;
+          list-style: none; }
+          .expContainer .container .devExp .jobDesc .jobBrDesc ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            color: #8892b0;
+            line-height: 1.3;
+            font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif; }
+          .expContainer .container .devExp .jobDesc .jobBrDesc ul li::before {
+            content: "▹";
+            position: absolute;
+            left: 0px;
+            color: #FFB944;
+            line-height: 20px; }

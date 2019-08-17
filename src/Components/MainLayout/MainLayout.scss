@@ -3,6 +3,7 @@
     }
   
 .mainLayout{
+
     width: 100%;
     min-height: 100vh !important;
     background-color: #0A192F;
@@ -14,6 +15,7 @@
    
 
 }
+button:focus {outline:0;}
 
 .leftSocial{
     width: 40px;

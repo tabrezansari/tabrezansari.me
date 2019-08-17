@@ -37,7 +37,6 @@
   background-size: 130px 130px;
   
   opacity: .8;
-  border-radius: 50%;
   -webkit-animation: move 3s infinite;
           animation: move 3s infinite;
 }
@@ -50,8 +49,8 @@
   background-image: url("../../Assets/logo/lodash.png");
   -webkit-animation-delay: -0.1s;
           animation-delay: -0.1s;
-  -webkit-transform: translate3d(357px, 672px, 1230px);
-          transform: translate3d(357px, 672px, 1230px);
+          -webkit-transform: translate3d(968px, 275px, 24px);
+          transform: translate3d(968px, 275px, 24px);
 }
 
 .bubble:nth-child(2) {
@@ -195,8 +194,8 @@
 }
 
 .bubble:nth-child(16) {
-  height: 56px;
-  width: 56px;
+  height: 150px;
+  width: 150px;
   background-image: url("../../Assets/logo/js.png");
   -webkit-animation-delay: -1.6s;
           animation-delay: -1.6s;
@@ -240,8 +239,8 @@
   background-image: url('../../Assets/logo/react.png');
   -webkit-animation-delay: -2s;
           animation-delay: -2s;
-  -webkit-transform: translate3d(93px, 613px, 98px);
-          transform: translate3d(93px, 613px, 98px);
+          -webkit-transform: translate3d(50px, 150px, 1000px);
+          transform: translate3d(50px, 150px, 1000px);
 }
 
 
@@ -254,8 +253,8 @@
   background-image: url("../../Assets/logo/lodash.png");
   -webkit-animation-delay: -0.1s;
           animation-delay: -0.1s;
-  -webkit-transform: translate3d(357px, 672px, 1230px);
-          transform: translate3d(357px, 672px, 1230px);
+  -webkit-transform: translate3d(968px, 275px, 24px);
+          transform: translate3d(968px, 275px, 24px);
 }
 
 .bubble:nth-child(22) {
@@ -324,8 +323,8 @@
   background-image: url("../../Assets/logo/gitlab.png");
   -webkit-animation-delay: -0.8s;
           animation-delay: -0.8s;
-  -webkit-transform: translate3d(120px, 178px, 1348px);
-          transform: translate3d(120px, 178px, 1348px);
+  -webkit-transform: translate3d(200px, 178px, 1348px);
+          transform: translate3d(200px, 178px, 1348px);
 }
 
 .bubble:nth-child(29) {
@@ -338,7 +337,7 @@
           transform: translate3d(234px, 276px, 358px);
 }
 
-.bubble:nth-child(10) {
+.bubble:nth-child(30) {
   height: 135px;
   width: 135px;
   background-image: url("../../Assets/logo/git.png");
