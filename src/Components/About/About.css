@@ -2,57 +2,132 @@
   -webkit-animation: devinfoFadein 2s linear forwards;
   animation: devinfoFadein 2s linear forwards; }
   .aboutContainer .container .devAbout {
-    max-width: 1000px;
+    max-width: 80%;
+    width: 80%;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     flex-direction: column;
     align-items: flex-start;
     margin: 0px 15%;
-    padding: 100px 0px; }
-    .aboutContainer .container .devAbout .aboutHead {
-      position: relative;
-      display: flex;
-      -webkit-box-align: center;
-      align-items: center;
-      width: 100%;
-      color: white;
-      white-space: nowrap;
-      font-size: 25px;
-      margin: 10px 0px 40px; }
-      .aboutContainer .container .devAbout .aboutHead small {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; }
+    .aboutContainer .container .devAbout .leftSide {
+      width: 50%; }
+      .aboutContainer .container .devAbout .leftSide .aboutHead {
+        position: relative;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 100%;
+        color: white;
+        white-space: nowrap;
+        font-size: 25px;
+        margin: 10px 0px 40px; }
+        .aboutContainer .container .devAbout .leftSide .aboutHead small {
+          color: #FFB944;
+          font-size: 13px; }
+      .aboutContainer .container .devAbout .leftSide .aboutHead::before {
+        content: "02.";
+        margin-right: 10px;
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+        font-weight: normal;
         color: #FFB944;
-        font-size: 13px; }
-    .aboutContainer .container .devAbout .aboutHead::before {
-      content: "02.";
-      margin-right: 10px;
-      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-      font-weight: normal;
-      color: #FFB944;
-      font-size: 20px;
-      position: relative;
-      top: 3px; }
-    .aboutContainer .container .devAbout .aboutHead::after {
-      content: "";
-      display: block;
-      height: 1px;
-      width: 300px;
-      background-color: #2d3952;
-      position: relative;
-      top: 3px;
-      margin-left: 20px; }
-    .aboutContainer .container .devAbout .info {
-      display: flex;
-      justify-content: space-between; }
-      .aboutContainer .container .devAbout .info .leftDesc {
-        width: 50%; }
-        .aboutContainer .container .devAbout .info .leftDesc .brDesc {
+        font-size: 20px;
+        position: relative;
+        top: 3px; }
+      .aboutContainer .container .devAbout .leftSide .aboutHead::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 300px;
+        background-color: #2d3952;
+        position: relative;
+        top: 3px;
+        margin-left: 20px; }
+      .aboutContainer .container .devAbout .leftSide .info {
+        display: flex;
+        justify-content: space-between; }
+        .aboutContainer .container .devAbout .leftSide .info .leftDesc .brDesc {
           -webkit-font-smoothing: antialiased;
           background-color: #0a192f;
           color: #8892b0;
           line-height: 1.5; }
-      .aboutContainer .container .devAbout .info .rightDesc {
-        width: 50%; }
+    .aboutContainer .container .devAbout .rightSide {
+      width: 50%;
+      padding: 0px 3rem;
+      padding-left: 8rem; }
+      .aboutContainer .container .devAbout .rightSide .tooltech .toolHead {
+        position: relative;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 100%;
+        color: #a8b2d1;
+        white-space: nowrap;
+        font-size: 18px;
+        margin: 10px 0px 40px; }
+        .aboutContainer .container .devAbout .rightSide .tooltech .toolHead small {
+          color: #FFB944;
+          font-size: 13px; }
+      .aboutContainer .container .devAbout .rightSide .tooltech .toolHead::before {
+        content: "#";
+        margin-right: 10px;
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+        font-weight: normal;
+        color: #FFB944;
+        font-size: 20px;
+        position: relative;
+        top: 3px; }
+      .aboutContainer .container .devAbout .rightSide .tooltech .toolHead::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 300px;
+        background-color: #2d3952;
+        position: relative;
+        top: 3px;
+        margin-left: 20px; }
+      .aboutContainer .container .devAbout .rightSide .tooltech .skillsCont .skill {
+        color: #ffb944;
+        font-weight: bold;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        min-height: 30px;
+        border-radius: 20px;
+        cursor: default;
+        border: none;
+        background-color: #4E535A;
+        display: inline-flex;
+        outline: none;
+        padding: 0px;
+        font-size: 1rem; }
+        .aboutContainer .container .devAbout .rightSide .tooltech .skillsCont .skill .skillImg {
+          width: 30px;
+          border-radius: 50%;
+          color: #e0e0e0;
+          background-color: #364152;
+          height: 30px;
+          font-size: 1rem;
+          padding: 4px;
+          margin-left: -1px; }
+          .aboutContainer .container .devAbout .rightSide .tooltech .skillsCont .skill .skillImg img {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            object-fit: cover; }
+        .aboutContainer .container .devAbout .rightSide .tooltech .skillsCont .skill span {
+          cursor: inherit;
+          display: flex;
+          align-items: center;
+          user-select: none;
+          white-space: nowrap;
+          font-family: 'Roboto Mono', monospace;
+          padding-left: 8px;
+          padding-right: 10px;
+          font-size: 15px; }
 
 .aboutContainer .bodyOpen {
   position: absolute;
