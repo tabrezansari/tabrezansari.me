@@ -24,7 +24,7 @@ export default class Home extends Component {
 
                         <span className="p2Open"> &nbsp;&nbsp;&nbsp;&lt;p&gt;</span>
                         <div className="devDesc">
-                            <p>I'm a software Developer based in Bangalore, B.E specializing in building exceptional, high-quality websites and applications.</p>
+                            <p>I'm a Software Developer based in Bangalore, B.E specializing in building exceptional, high-quality websites and  applications.</p>
                         </div>
                         <span className="p2Close"> &nbsp;&nbsp;&nbsp;&lt;/p&gt;</span>
 

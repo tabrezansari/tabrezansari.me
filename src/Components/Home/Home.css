@@ -60,96 +60,96 @@
 
 .bodyOpen {
   position: absolute;
-  left: 8rem;
-  top: 10rem;
+  left: 8%;
+  top: 22%;
   color: gray;
   font-size: 17px;
   font-family: 'La Belle Aurore', cursive; }
 
 .bodyClose {
   position: absolute;
-  left: 8rem;
-  bottom: 4rem;
+  left: 8%;
+  bottom: 17%;
   color: gray;
   font-size: 17px;
   font-family: 'La Belle Aurore', cursive; }
 
 .htmlOpen {
   position: absolute;
-  left: 7rem;
-  top: 8rem;
+  left: 7%;
+  top: 18%;
   color: gray;
   font-size: 17px;
   font-family: 'La Belle Aurore', cursive; }
 
 .htmlClose {
   position: absolute;
-  left: 7rem;
-  bottom: 2rem;
+  left: 7%;
+  bottom: 13%;
   color: gray;
   font-size: 17px;
   font-family: 'La Belle Aurore', cursive; }
 
 .pOpen {
   position: absolute;
-  left: 9rem;
-  top: 12.5rem;
+  left: 11%;
+  top: 27%;
   color: gray;
   font-size: 15px;
   font-family: 'La Belle Aurore', cursive; }
 
 .pClose {
   position: absolute;
-  left: 21rem;
-  top: 12.5rem;
+  left: 24%;
+  top: 27%;
   color: gray;
   font-size: 15px;
   font-family: 'La Belle Aurore', cursive; }
 
 .p2Open {
   position: absolute;
-  left: 9rem;
-  top: 28.5rem;
+  left: 11%;
+  bottom: 33%;
   color: gray;
   font-size: 15px;
   font-family: 'La Belle Aurore', cursive; }
 
 .p2Close {
   position: absolute;
-  left: 39rem;
-  top: 30rem;
+  left: 45%;
+  bottom: 31%;
   color: gray;
   font-size: 15px;
   font-family: 'La Belle Aurore', cursive; }
 
 .h1Open {
   position: absolute;
-  left: 9rem;
-  top: 14.5rem;
+  left: 11%;
+  top: 32%;
   color: gray;
   font-size: 16px;
   font-family: 'La Belle Aurore', cursive; }
 
 .h1Close {
   position: absolute;
-  left: 62rem;
-  top: 23.5rem;
+  right: 20%;
+  top: 51%;
   color: gray;
   font-size: 16px;
   font-family: 'La Belle Aurore', cursive; }
 
 .btnOpen {
   position: absolute;
-  left: 9rem;
-  top: 32.5rem;
+  left: 10%;
+  bottom: 25%;
   color: gray;
   font-size: 15px;
   font-family: 'La Belle Aurore', cursive; }
 
 .btnClose {
   position: absolute;
-  left: 19rem;
-  top: 32.5rem;
+  left: 22%;
+  bottom: 25%;
   color: gray;
   font-size: 15px;
   font-family: 'La Belle Aurore', cursive; }
