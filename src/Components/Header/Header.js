@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import './Header.css';
-import Resume from '../../Assets/TabrezAnsari.pdf'
+import Resume from '../../Assets/tabrezansari.pdf'
 import tabrez from '../../Assets/tabrez.png'
 import tabrezsvg from '../../Assets/tabrezsvg.svg'
 export default class Header extends Component{

@@ -44,3 +44,15 @@ button:focus {
   .leftSocial .vl {
     border-left: 2px solid #8892b0;
     height: 80px; }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .leftSocial {
+    width: 100% !important;
+    left: 0rem; }
+    .leftSocial ul {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 78%; }
+    .leftSocial .vl {
+      display: none; } }

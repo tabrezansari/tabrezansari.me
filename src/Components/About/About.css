@@ -95,7 +95,7 @@
         font-weight: bold;
         margin-right: 8px;
         margin-bottom: 8px;
-        min-height: 30px;
+        min-height: 25px;
         border-radius: 20px;
         cursor: default;
         border: none;
@@ -105,11 +105,11 @@
         padding: 0px;
         font-size: 1rem; }
         .aboutContainer .container .devAbout .rightSide .tooltech .skillsCont .skill .skillImg {
-          width: 30px;
+          width: 25px;
           border-radius: 50%;
           color: #e0e0e0;
           background-color: #364152;
-          height: 30px;
+          height: 25px;
           font-size: 1rem;
           padding: 4px;
           margin-left: -1px; }
@@ -127,68 +127,68 @@
           font-family: 'Roboto Mono', monospace;
           padding-left: 8px;
           padding-right: 10px;
-          font-size: 15px; }
+          font-size: 13px; }
 
 .aboutContainer .bodyOpen {
   position: absolute;
-  left: 8rem;
-  top: 10rem;
+  left: 8%;
+  top: 22%;
   color: gray;
   font-size: 17px;
   font-family: 'La Belle Aurore', cursive; }
 
 .aboutContainer .bodyClose {
   position: absolute;
-  left: 8rem;
-  bottom: 5rem;
+  left: 8%;
+  bottom: 28%;
   color: gray;
   font-size: 17px;
   font-family: 'La Belle Aurore', cursive; }
 
 .aboutContainer .pOpen {
   position: absolute;
-  left: 9rem;
-  top: 17.5rem;
+  left: 10%;
+  top: 38%;
   color: gray;
   font-size: 15px;
   font-family: 'La Belle Aurore', cursive; }
 
 .aboutContainer .pClose {
   position: absolute;
-  left: 41rem;
-  top: 29rem;
+  left: 33%;
+  top: 60%;
   color: gray;
   font-size: 15px;
   font-family: 'La Belle Aurore', cursive; }
 
 .aboutContainer .htmlOpen {
   position: absolute;
-  left: 7rem;
-  top: 8rem;
+  left: 7%;
+  top: 18%;
   color: gray;
   font-size: 17px;
   font-family: 'La Belle Aurore', cursive; }
 
 .aboutContainer .htmlClose {
   position: absolute;
-  left: 7rem;
-  bottom: 3rem;
+  left: 7%;
+  bottom: 23%;
   color: gray;
   font-size: 17px;
   font-family: 'La Belle Aurore', cursive; }
 
 .aboutContainer .h1Open {
   position: absolute;
-  left: 9rem;
-  top: 12.5rem;
+  left: 10%;
+  top: 27%;
   color: gray;
   font-size: 16px;
   font-family: 'La Belle Aurore', cursive; }
 
 .aboutContainer .h1Close {
   position: absolute;
-  left: 43rem;
-  top: 12.5rem;
+  left: 48%;
+  top: 27%;
   color: gray;
   font-size: 16px;
   font-family: 'La Belle Aurore', cursive; }

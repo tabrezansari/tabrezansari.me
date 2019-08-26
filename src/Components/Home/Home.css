@@ -15,14 +15,14 @@
   animation: devinfoFadein 4s linear forwards; }
 
 .homeContainer .devInfo {
-  max-width: 1000px;
+  max-width: 80%;
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   flex-direction: column;
   align-items: flex-start;
   margin: 0px 15%;
-  padding: 120px 0px; }
+  padding: 8% 0px; }
   .homeContainer .devInfo .devHi {
     transition-delay: 200ms;
     color: #ffb944;
@@ -153,3 +153,76 @@
   color: gray;
   font-size: 15px;
   font-family: 'La Belle Aurore', cursive; }
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .devInfo {
+    width: 90%;
+    margin: 4% 15% !important;
+    padding: 35% 0% !important; }
+    .devInfo .devHi {
+      font-size: 15px !important; }
+    .devInfo .devName {
+      font-size: 38px !important; }
+    .devInfo .devTag {
+      font-size: 42px !important; }
+    .devInfo .devDesc {
+      width: 90% !important; }
+    .devInfo .moreBtn {
+      padding: 0.75rem 2rem !important; }
+  .htmlOpen {
+    left: 0% !important;
+    top: 19% !important;
+    font-size: 13px !important; }
+  .htmlClose {
+    left: 0% !important;
+    bottom: 13% !important;
+    font-size: 13px !important; }
+  .bodyOpen {
+    left: 5%;
+    top: 23%;
+    font-size: 13px !important; }
+  .bodyClose {
+    left: 5%;
+    bottom: 17%;
+    font-size: 13px !important; }
+  .pOpen {
+    display: none;
+    left: 7%;
+    top: 29%;
+    font-size: 13px !important; }
+  .pClose {
+    display: none;
+    left: 51%;
+    top: 29%;
+    font-size: 13px !important; }
+  .h1Open {
+    display: none;
+    left: 6%;
+    top: 33%;
+    font-size: 13px !important; }
+  .h1Close {
+    display: none;
+    right: 17%;
+    top: 50%;
+    font-size: 13px !important; }
+  .p2Open {
+    display: none;
+    left: 7%;
+    bottom: 38%;
+    font-size: 13px !important; }
+  .p2Close {
+    display: none;
+    left: 67%;
+    bottom: 30%;
+    font-size: 13px !important; }
+  .btnOpen {
+    display: none;
+    left: 5%;
+    bottom: 24%;
+    font-size: 13px !important; }
+  .btnClose {
+    display: none;
+    left: 53%;
+    bottom: 24%;
+    font-size: 13px !important; } }

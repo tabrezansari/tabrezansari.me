@@ -3,7 +3,7 @@
   -webkit-animation: devinfoFadein 2s linear forwards;
   animation: devinfoFadein 2s linear forwards; }
   .expContainer .container .devExp {
-    max-width: 1000px;
+    max-width: 80%;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
