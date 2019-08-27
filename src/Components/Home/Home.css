@@ -11,7 +11,7 @@
     opacity: 1; } }
 
 .homeContainer .container {
-  padding: 3% 0%;
+  padding: 0% 0%;
   -webkit-animation: devinfoFadein 4s linear forwards;
   animation: devinfoFadein 4s linear forwards; }
   .homeContainer .container .top-tags {

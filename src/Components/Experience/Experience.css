@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .expContainer .container {
-  padding: 3% 0%;
+  padding: 0% 0%;
   -webkit-animation: devinfoFadein 4s linear forwards;
   animation: devinfoFadein 4s linear forwards; }
   .expContainer .container .top-tags {
