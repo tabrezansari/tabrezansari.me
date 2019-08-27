@@ -10,18 +10,17 @@ export default class About extends Component {
         return (
             <div className="aboutContainer">
                 <div className="container">
-                    <span className="htmlOpen"> &nbsp;&nbsp;&nbsp;&lt;html&gt;</span>
-                    <span className="bodyOpen"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
+                  <div className="top-tags">
+                        <span className="htmlOpen"> &nbsp;&nbsp;&nbsp;&lt;html&gt;</span>
+                        <span className="bodyOpen"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
+                    </div>
                     <div className="devAbout">
                         <div className="leftSide">
-                            <span className="h1Open"> &nbsp;&nbsp;&nbsp;&lt;h1&gt;</span>
                             <h3 className="aboutHead">
-                                About Me
-                        </h3>
-                            <span className="h1Close"> &nbsp;&nbsp;&nbsp;&lt;/h1&gt;</span>
+                                 About Me
+                              </h3>
 
                             <div className="info">
-                                <span className="pOpen"> &nbsp;&nbsp;&nbsp;&lt;p&gt;</span>
 
                                 <div className="leftDesc">
                                     <p className="brDesc">
@@ -32,12 +31,10 @@ export default class About extends Component {
                                         Shortly after graduating from Vishveshwaraya Technological University, I joined the engineering team at Intellicar Telematics Pvt. Ltd. where I work on a wide variety of interesting and meaningful projects on a daily basis.
                             </p>
                                 </div>
-                                <span className="pClose"> &nbsp;&nbsp;&nbsp;&lt;/p&gt;</span>
 
 
                             </div>
-                            <span className="bodyClose"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;</span>
-                            <span className="htmlClose"> &nbsp;&nbsp;&nbsp;&lt;/html&gt;</span>
+                          
                         </div>
                         <div className="rightSide">
                             <div className="tooltech">
@@ -81,7 +78,14 @@ export default class About extends Component {
 
                     </div>
 
+
+                    <div className="bottom-tags">
+                        <span className="bodyClose"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;</span>
+                        <span className="htmlClose"> &nbsp;&nbsp;&nbsp;&lt;/html&gt;</span>
+                 </div>
                 </div>
+                
+                    
 
 
 

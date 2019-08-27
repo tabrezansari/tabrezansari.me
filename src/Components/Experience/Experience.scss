@@ -1,8 +1,48 @@
 
 .expContainer{
-    .container{
-        -webkit-animation: devinfoFadein 2s linear forwards;
-        animation: devinfoFadein 2s linear forwards;
+        .container{
+            padding: 3% 0%;
+            -webkit-animation: devinfoFadein 4s linear forwards;
+            animation: devinfoFadein 4s linear forwards;
+            .top-tags{
+                margin-left: 8%;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .htmlOpen{
+                    color: gray;
+                    font-size: 17px;
+                    font-family: 'La Belle Aurore', cursive;
+                }
+                .bodyOpen{
+                    margin-left: 2%;
+                    color: gray;
+                    font-size: 17px;
+                    font-family: 'La Belle Aurore', cursive;
+                }
+            }
+            .bottom-tags{
+                margin-left: 8%;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    
+                .bodyClose{
+                    margin-left: 2%;
+                    color: gray;
+                    font-size: 17px;
+                    font-family: 'La Belle Aurore', cursive;
+                }
+                
+                
+                .htmlClose{
+                    color: gray;
+                    font-size: 17px;
+                    font-family: 'La Belle Aurore', cursive;
+                }
+                
+    
+         }
         .devExp{
             max-width: 80%;
             -webkit-box-pack: center;
@@ -11,7 +51,7 @@
             flex-direction: column;
             align-items: flex-start;
             margin: 0px 15%;
-            padding: 100px 0px;
+            padding: 2% 0px;
             .expHead{
                 position: relative;
                 display: flex;

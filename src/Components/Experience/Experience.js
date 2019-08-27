@@ -7,6 +7,10 @@ export default class Experience extends Component {
         return (
             <div className="expContainer">
                 <div className="container">
+                     <div className="top-tags">
+                            <span className="htmlOpen"> &nbsp;&nbsp;&nbsp;&lt;html&gt;</span>
+                            <span className="bodyOpen"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
+                        </div>
                     <div className="devExp">
                         <h3 className="expHead">
                             Experience
@@ -31,7 +35,11 @@ export default class Experience extends Component {
 
 
                     </div>
-
+                    
+                    <div className="bottom-tags">
+                        <span className="bodyClose"> &nbsp;&nbsp;&nbsp;&lt;/body&gt;</span>
+                        <span className="htmlClose"> &nbsp;&nbsp;&nbsp;&lt;/html&gt;</span>
+                    </div>
 
                 </div>
 

@@ -14,100 +14,109 @@
       } 
 
 .homeContainer{
-.container{
-    -webkit-animation: devinfoFadein 4s linear forwards;
-    animation: devinfoFadein 4s linear forwards;
-}
+    .container{
+        padding: 3% 0%;
+        -webkit-animation: devinfoFadein 4s linear forwards;
+        animation: devinfoFadein 4s linear forwards;
+        .top-tags{
+            margin-left: 8%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .htmlOpen{
+                color: gray;
+                font-size: 17px;
+                font-family: 'La Belle Aurore', cursive;
+            }
+            .bodyOpen{
+                margin-left: 2%;
+                color: gray;
+                font-size: 17px;
+                font-family: 'La Belle Aurore', cursive;
+            }
+        }
+        .bottom-tags{
+            margin-left: 8%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
 
-.devInfo{
-    max-width: 80%;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0px 15%;
-    padding: 8% 0px;
+            .bodyClose{
+                margin-left: 2%;
+                color: gray;
+                font-size: 17px;
+                font-family: 'La Belle Aurore', cursive;
+            }
+            
+            
+            .htmlClose{
+                color: gray;
+                font-size: 17px;
+                font-family: 'La Belle Aurore', cursive;
+            }
+            
 
-    .devHi{
-        transition-delay: 200ms;
-        color: rgb(255, 185, 68);
-        font-size: 16px;
-        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-        font-weight: normal;
-        margin: 0px 0px 20px 3px;
-    }
-    .devName{
-        color: white;
-        font-size: 4rem;
-        line-height: 0px;
-    }
-    .devTag{
-        font-size: 80px;
-        line-height: 1.1;
-        color: rgb(136, 146, 176);
-    }
-    .devDesc{
-        width: 50%;
-        p{
-            color: #8892b0;
         }
     }
-    .moreBtn{
-        color: #FFB944;
-        background-color: transparent;
-        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-        line-height: 1;
-        cursor: pointer;
-        font-size: 13px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: #FFB944;
-        border-image: initial;
-        border-radius: 3px;
-        padding: 0.75rem 1rem;
-        text-decoration: none;
-        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-    }
-   
-}
+
+
+        .devInfo{
+            max-width: 80%;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0px 15%;
+            padding: 2% 0px;
+
+            .devHi{
+                transition-delay: 200ms;
+                color: rgb(255, 185, 68);
+                font-size: 16px;
+                font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+                font-weight: normal;
+                margin: 0px 0px 20px 3px;
+            }
+            .devName{
+                color: white;
+                font-size: 4rem;
+                line-height: 0px;
+            }
+            .devTag{
+                font-size: 80px;
+                line-height: 1.1;
+                color: rgb(136, 146, 176);
+            }
+            .devDesc{
+                width: 50%;
+                p{
+                    color: #8892b0;
+                }
+            }
+            .moreBtn{
+                color: #FFB944;
+                background-color: transparent;
+                font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+                line-height: 1;
+                cursor: pointer;
+                font-size: 13px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #FFB944;
+                border-image: initial;
+                border-radius: 3px;
+                padding: 0.75rem 1rem;
+                text-decoration: none;
+                transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+            }
+        
+        }
 
 }
 
 
-.bodyOpen{
-    position: absolute;
-    left: 8%;
-    top: 22%;
-    color: gray;
-    font-size: 17px;
-    font-family: 'La Belle Aurore', cursive;
-}
-.bodyClose{
-    position: absolute;
-    left: 8%;
-    bottom: 17%;
-    color: gray;
-    font-size: 17px;
-    font-family: 'La Belle Aurore', cursive;
-}
 
-.htmlOpen{
-    position: absolute;
-    left: 7%;
-    top: 18%;
-    color: gray;
-    font-size: 17px;
-    font-family: 'La Belle Aurore', cursive;
-}
-.htmlClose{
-    position: absolute;
-    left: 7%;
-    bottom: 13%;
-    color: gray;
-    font-size: 17px;
-    font-family: 'La Belle Aurore', cursive;
-}
 
 
 .pOpen{

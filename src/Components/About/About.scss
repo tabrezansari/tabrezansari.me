@@ -1,8 +1,49 @@
 
 .aboutContainer{
     .container{
-        -webkit-animation: devinfoFadein 2s linear forwards;
-        animation: devinfoFadein 2s linear forwards;
+        padding: 3% 0%;
+        -webkit-animation: devinfoFadein 4s linear forwards;
+        animation: devinfoFadein 4s linear forwards;
+        .top-tags{
+            margin-left: 8%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .htmlOpen{
+                color: gray;
+                font-size: 17px;
+                font-family: 'La Belle Aurore', cursive;
+            }
+            .bodyOpen{
+                margin-left: 2%;
+                color: gray;
+                font-size: 17px;
+                font-family: 'La Belle Aurore', cursive;
+            }
+        }
+        .bottom-tags{
+            margin-left: 8%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .bodyClose{
+                margin-left: 2%;
+                color: gray;
+                font-size: 17px;
+                font-family: 'La Belle Aurore', cursive;
+            }
+            
+            
+            .htmlClose{
+                color: gray;
+                font-size: 17px;
+                font-family: 'La Belle Aurore', cursive;
+            }
+            
+
+        }
+    
         .devAbout{
             max-width: 80%;
             width: 80%;
@@ -12,7 +53,7 @@
             flex-direction: column;
             align-items: flex-start;
             margin: 0px 15%;
-            padding: 100px 0px;
+            padding: 2% 0px;
             display: flex;
             justify-content: space-between;
             flex-direction: row;
@@ -158,77 +199,5 @@
             }
         } 
     }
-    .bodyOpen{
-        position: absolute;
-        left: 8%;
-        top: 22%;
-        color: gray;
-        font-size: 17px;
-        font-family: 'La Belle Aurore', cursive;
-    }
-    .bodyClose{
-        position: absolute;
-        left: 8%;
-        bottom: 28%;
-        color: gray;
-        font-size: 17px;
-        font-family: 'La Belle Aurore', cursive;
-    }
-    
-    .pOpen{
-        position: absolute;
-        left: 10%;
-        top: 38%;
-        color: gray;
-        font-size: 15px;
-        font-family: 'La Belle Aurore', cursive;
-    }
-    .pClose{
-        position: absolute;
-    
-        left: 33%;
-        top: 60%;
-        color: gray;
-        font-size: 15px;
-        font-family: 'La Belle Aurore', cursive;
-    
-    }
-
-    
-    .htmlOpen{
-        position: absolute;
-        left: 7%;
-        top: 18%;
-        color: gray;
-        font-size: 17px;
-        font-family: 'La Belle Aurore', cursive;
-    }
-    .htmlClose{
-        position: absolute;
-        left: 7%;
-        bottom: 23%;
-        color: gray;
-        font-size: 17px;
-        font-family: 'La Belle Aurore', cursive;
-    }
-    .h1Open{
-        position: absolute;
-        left: 10%;
-        top: 27%;
-        color: gray;
-        font-size: 16px;
-        font-family: 'La Belle Aurore', cursive;
-    
-    }
-    .h1Close{
-    
-        position: absolute;
-    
-        left: 48%;
-        top: 27%;
-        color: gray;
-        font-size: 16px;
-        font-family: 'La Belle Aurore', cursive;
-    }
-
+  
 }

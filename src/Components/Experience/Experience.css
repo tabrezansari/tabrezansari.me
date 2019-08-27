@@ -1,7 +1,36 @@
 @charset "UTF-8";
 .expContainer .container {
-  -webkit-animation: devinfoFadein 2s linear forwards;
-  animation: devinfoFadein 2s linear forwards; }
+  padding: 3% 0%;
+  -webkit-animation: devinfoFadein 4s linear forwards;
+  animation: devinfoFadein 4s linear forwards; }
+  .expContainer .container .top-tags {
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .expContainer .container .top-tags .htmlOpen {
+      color: gray;
+      font-size: 17px;
+      font-family: 'La Belle Aurore', cursive; }
+    .expContainer .container .top-tags .bodyOpen {
+      margin-left: 2%;
+      color: gray;
+      font-size: 17px;
+      font-family: 'La Belle Aurore', cursive; }
+  .expContainer .container .bottom-tags {
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .expContainer .container .bottom-tags .bodyClose {
+      margin-left: 2%;
+      color: gray;
+      font-size: 17px;
+      font-family: 'La Belle Aurore', cursive; }
+    .expContainer .container .bottom-tags .htmlClose {
+      color: gray;
+      font-size: 17px;
+      font-family: 'La Belle Aurore', cursive; }
   .expContainer .container .devExp {
     max-width: 80%;
     -webkit-box-pack: center;
@@ -10,7 +39,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 0px 15%;
-    padding: 100px 0px; }
+    padding: 2% 0px; }
     .expContainer .container .devExp .expHead {
       position: relative;
       display: flex;
