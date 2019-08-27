@@ -5,8 +5,7 @@
   .aboutContainer .container .top-tags {
     margin-left: 8%;
     display: flex;
-    flex-direction: column;
-    width: 100%; }
+    flex-direction: column; }
     .aboutContainer .container .top-tags .htmlOpen {
       color: gray;
       font-size: 17px;
@@ -19,8 +18,7 @@
   .aboutContainer .container .bottom-tags {
     margin-left: 8%;
     display: flex;
-    flex-direction: column;
-    width: 100%; }
+    flex-direction: column; }
     .aboutContainer .container .bottom-tags .bodyClose {
       margin-left: 2%;
       color: gray;

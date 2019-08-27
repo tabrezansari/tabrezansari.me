@@ -2,6 +2,8 @@
   display: none; }
 
 .mainLayout {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   min-height: 100vh !important;
   background-color: #0A192F; }

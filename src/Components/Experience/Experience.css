@@ -6,8 +6,7 @@
   .expContainer .container .top-tags {
     margin-left: 8%;
     display: flex;
-    flex-direction: column;
-    width: 100%; }
+    flex-direction: column; }
     .expContainer .container .top-tags .htmlOpen {
       color: gray;
       font-size: 17px;
@@ -20,8 +19,7 @@
   .expContainer .container .bottom-tags {
     margin-left: 8%;
     display: flex;
-    flex-direction: column;
-    width: 100%; }
+    flex-direction: column; }
     .expContainer .container .bottom-tags .bodyClose {
       margin-left: 2%;
       color: gray;
