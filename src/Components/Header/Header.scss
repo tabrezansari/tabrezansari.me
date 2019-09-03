@@ -32,6 +32,37 @@
         overflow: hidden;
         background-color: #0A192F;
         padding: 20px 10px;   
+        .menu-bar{
+          float: right;
+          right: 20px;
+          top: 7px;
+          cursor: pointer;
+          position: relative;
+          color: #fcb746;
+          display: none;
+        }
+        .header-mobile{
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          background-color: #162540;
+          z-index: 1;
+          display: none;
+          .meuns{
+            a{
+              display: flex;
+              flex-direction: column;
+            }
+            .header-icon{
+              color: #FFB944;
+              font-size: 2.5rem;
+              font-style: normal;
+              margin-bottom: 5px;
+            }
+          }
+         
+        }
         
          a {
             font-family: 'Roboto Mono', monospace;
@@ -109,7 +140,9 @@
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  
+    .menu-bar{
+      display: block !important;
+    }
       .header{
           .imgLogo{
             width: 3rem;
@@ -118,6 +151,9 @@
           .header-right{
               display: none;
           }
+      }
+      .header-mobile{
+        display: block;
       }
   
 }

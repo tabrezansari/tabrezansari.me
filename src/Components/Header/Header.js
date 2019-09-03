@@ -13,7 +13,18 @@ this.props.viewHandler(index);
         return(
             <div className="header">
                 <img className="imgLogo" src={tabrez} />
+                <div className="menu-bar" onClick={()=>this.showNav()}>
+                 <i class="fas fa-bars"></i>
+                </div>
+                <div className="header-mobile">
+                    <div className="menus">
+                    <a  onClick={()=>this.setViewIndex(0)}><i class="fas fa-home header-icon"></i><small>Home</small></a>
+                    <a   onClick={()=>this.setViewIndex(1)}><i class="fas fa-home header-icon"></i> <small>About</small></a>
+                    <a  onClick={()=>this.setViewIndex(2)}><i class="fas fa-home header-icon"></i> <small>Experience</small></a>
+                    <a  onClick={()=>this.setViewIndex(3)}><i class="fas fa-home header-icon"></i> <small>Contact</small></a>
+                    </div>
 
+                </div>
                 <div className="header-right">
                     <a  onClick={()=>this.setViewIndex(0)}><small>01.</small> Home</a>
                     <a   onClick={()=>this.setViewIndex(1)}><small>02.</small> About</a>

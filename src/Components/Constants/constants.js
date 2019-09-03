@@ -49,22 +49,26 @@ export const  lang=[
         "logo":'js.svg'
     },
     {   "id":2,
+        "name":"TypeScript",
+        "logo":'ts.svg'
+    },
+    {   "id":3,
         "name":"PHP",
         "logo":'php.svg'
     },
-    {   "id":3,
+    {   "id":4,
         "name":"MySql",
         "logo":'mysql.svg'
     },
-    {   "id":4,
+    {   "id":5,
         "name":"Sass",
         "logo":'sass.svg'
     },
-    {   "id":5,
+    {   "id":6,
         "name":"CSS",
         "logo":'css.svg'
     },
-    {   "id":6,
+    {   "id":7,
         "name":"HTML",
         "logo":'html.svg'
     }
