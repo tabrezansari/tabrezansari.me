@@ -21,6 +21,8 @@
     ·
     <a href="https://github.com/tabrezansari/tabrezansari.me/issues" target="_blank>Request Feature</a>
   </p>
+                                                                              <a href="https//tabrezansari.me/" target="_blank" class="button">Visit Website</a>
+
 </p>
 
 
