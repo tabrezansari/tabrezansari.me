@@ -168,3 +168,17 @@
             left: 0px;
             color: #FFB944;
             line-height: 20px; }
+
+@media only screen and (max-width: 768px) {
+  .expTabs {
+    width: 100% !important; }
+    .expTabs ul li button {
+      padding: 0px 10px 0px !important;
+      height: 35px !important;
+      font-size: 12px !important; }
+  .jobDesc {
+    width: 90%; }
+    .jobDesc h4 {
+      font-size: 15px !important; }
+    .jobDesc .jobBrDesc {
+      width: 90% !important; } }

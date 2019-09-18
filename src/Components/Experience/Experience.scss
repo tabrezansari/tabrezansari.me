@@ -218,6 +218,36 @@
             
 
          }
+
+         
+
+
     }
+
+}
+
+@media only screen and (max-width: 768px) {
+.expTabs{
+    width: 100% !important;
+    ul{
+        li{
+            button{
+                padding: 0px 10px 0px !important;
+                height: 35px !important;
+                font-size: 12px !important;
+
+            }
+        }
+    }
+}
+.jobDesc{
+width: 90% ;
+    h4{
+        font-size: 15px !important;
+    }
+    .jobBrDesc{
+        width: 90% !important;
+    }
+}
 
 }
