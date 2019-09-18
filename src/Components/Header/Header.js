@@ -19,14 +19,14 @@ showNav=()=>{
             <div className="header">
                 <img className="imgLogo" src={tabrez} />
                 <div className="menu-bar" onClick={()=>this.showNav()}>
-                 <i style={{fontStyle:'normal'}} class="fa fa-bars menu-mobile"></i>
+                 <i style={{fontStyle:'normal'}} className="fa fa-bars menu-mobile"></i>
                 </div>
                 <div id="head-mobile" className="header-mobile">
                     <div className="menus">
-                    <a className="menus-a" onClick={()=>this.setViewIndex(0)}><i class="fas fa-home header-icon"></i></a>
-                    <a className="menus-a"  onClick={()=>this.setViewIndex(1)}><i class="fas fa-user header-icon"></i> </a>
-                    <a className="menus-a" onClick={()=>this.setViewIndex(2)}><i class="fas fa-briefcase  header-icon"></i> </a>
-                    <a className="menus-a" onClick={()=>this.setViewIndex(3)}><i class="fas fa-envelope header-icon"></i> </a>
+                    <a className="menus-a" onClick={()=>this.setViewIndex(0)}><i className="fas fa-home header-icon"></i></a>
+                    <a className="menus-a"  onClick={()=>this.setViewIndex(1)}><i className="fas fa-user header-icon"></i> </a>
+                    <a className="menus-a" onClick={()=>this.setViewIndex(2)}><i className="fas fa-briefcase  header-icon"></i> </a>
+                    <a className="menus-a" onClick={()=>this.setViewIndex(3)}><i className="fas fa-envelope header-icon"></i> </a>
                     </div>
 
                     <div className="social-mobile">
