@@ -23,10 +23,10 @@ showNav=()=>{
                 </div>
                 <div id="head-mobile" className="header-mobile">
                     <div className="menus">
-                    <a className="menus-a" onClick={()=>this.setViewIndex(0)}><i className="fas fa-home header-icon"></i></a>
-                    <a className="menus-a"  onClick={()=>this.setViewIndex(1)}><i className="fas fa-user header-icon"></i> </a>
-                    <a className="menus-a" onClick={()=>this.setViewIndex(2)}><i className="fas fa-briefcase  header-icon"></i> </a>
-                    <a className="menus-a" onClick={()=>this.setViewIndex(3)}><i className="fas fa-envelope header-icon"></i> </a>
+                    <a className="menus-a" onClick={()=>this.setViewIndex(0)}><i className="fa fa-home header-icon"></i></a>
+                    <a className="menus-a"  onClick={()=>this.setViewIndex(1)}><i className="fa fa-user header-icon"></i> </a>
+                    <a className="menus-a" onClick={()=>this.setViewIndex(2)}><i className="fa fa-briefcase  header-icon"></i> </a>
+                    <a className="menus-a" onClick={()=>this.setViewIndex(3)}><i className="fa fa-envelope header-icon"></i> </a>
                     </div>
 
                     <div className="social-mobile">
