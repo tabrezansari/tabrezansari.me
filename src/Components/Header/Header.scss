@@ -49,18 +49,48 @@
           background-color: #162540;
           z-index: 1;
           display: none;
-          .meuns{
-            a{
-              display: flex;
-              flex-direction: column;
+        
+          .social-mobile{
+            width: 100%;
+            padding: 8rem 0rem;
+            color: rgb(168, 178, 209);
+            ul{
+                animation: 1.5s ease-out 0s 1 vlinc;
+            
+                display: flex;
+                flex-direction: column;
+                -webkit-box-align: center;
+                list-style: none;
+                padding-left: 1rem;
+                width: 100%;
+                li{
+                    transition-delay: 200ms;
+                    cursor: pointer;
+                    padding: 15px;
+                    a{
+                        display: inline-block;
+                        text-decoration-skip-ink: auto;
+                        color: inherit;
+                        font-size: 15px;
+                        position: relative;
+                        cursor: pointer;
+                        text-decoration: none;
+                        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+            
+                    }
+                    a:hover,:focus 
+                    {
+                        color:#ffb944;
+            
+                        transform: translateY(-3px);
+                    }
+                }
             }
-            .header-icon{
-              color: #FFB944;
-              font-size: 2.5rem;
-              font-style: normal;
-              margin-bottom: 5px;
+            .vl {
+                border-left: 2px solid #8892b0;
+                height: 80px;
+              }
             }
-          }
          
         }
         
@@ -138,6 +168,31 @@
         }
 }
 
+.meuns{
+  .menus-a {
+    font-family: 'Roboto Mono', monospace;
+    float: left;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    color: blue;
+    .header-icon{
+      color: #FFB944;
+      font-size: 2.5rem;
+      font-style: normal !important;
+      margin-bottom: 5px;
+      
+    }
+              
+    animation: 1s ease-out 0s 1 showTabs;
+} 
+  
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
     .menu-bar{
@@ -151,9 +206,40 @@
           .header-right{
               display: none;
           }
+          a{
+            font-size: 20px !important;
+          }
       }
       .header-mobile{
-        display: block;
+        width: 20%;
+        position: fixed !important;
+       
+        .social-mobile{
+          padding: 6rem 0rem !important;
+          ul{
+            padding-left: 0px !important;
+            li{
+            padding: 5px 0px !important;
+            }
+          }
+        }
+       
+      }
+
+      .meuns{
+
+        margin-top: 3rem !important;
+        
+      }
+      .menus-a{
+        text-align: left !important ;
+        padding: 20px 5px !important;
+        color: #fcb746 !important;
+    
+      }
+      .menus-a:nth-child(1){
+        margin-top: 3rem !important;
+
       }
   
 }

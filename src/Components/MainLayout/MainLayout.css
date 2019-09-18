@@ -10,6 +10,8 @@
   .mainLayout .mainBody {
     background-color: #0A192F;
     width: 100%; }
+  .mainLayout i {
+    font-style: normal; }
 
 button:focus {
   outline: 0; }
@@ -54,6 +56,7 @@ button:focus {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .leftSocial {
+    display: none;
     width: 100% !important;
     left: 0rem; }
     .leftSocial ul {

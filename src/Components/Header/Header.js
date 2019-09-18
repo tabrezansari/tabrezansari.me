@@ -3,10 +3,15 @@ import './Header.css';
 import Resume from '../../Assets/tabrezansari.pdf'
 import tabrez from '../../Assets/tabrez.png'
 import tabrezsvg from '../../Assets/tabrezsvg.svg'
+import { normalize } from 'path';
 export default class Header extends Component{
 
 setViewIndex=(index)=>{
 this.props.viewHandler(index);
+}
+showNav=()=>{
+    let mobNav=document.getElementById("head-mobile");
+    mobNav.style.display="block";
 }
 
     render(){
@@ -14,15 +19,35 @@ this.props.viewHandler(index);
             <div className="header">
                 <img className="imgLogo" src={tabrez} />
                 <div className="menu-bar" onClick={()=>this.showNav()}>
-                 <i class="fas fa-bars"></i>
+                 <i style={{fontStyle:'normal'}} class="fas fa-bars menu-mobile"></i>
                 </div>
-                <div className="header-mobile">
+                <div id="head-mobile" className="header-mobile">
                     <div className="menus">
-                    <a  onClick={()=>this.setViewIndex(0)}><i class="fas fa-home header-icon"></i><small>Home</small></a>
-                    <a   onClick={()=>this.setViewIndex(1)}><i class="fas fa-home header-icon"></i> <small>About</small></a>
-                    <a  onClick={()=>this.setViewIndex(2)}><i class="fas fa-home header-icon"></i> <small>Experience</small></a>
-                    <a  onClick={()=>this.setViewIndex(3)}><i class="fas fa-home header-icon"></i> <small>Contact</small></a>
+                    <a className="menus-a" onClick={()=>this.setViewIndex(0)}><i class="fas fa-home header-icon"></i></a>
+                    <a className="menus-a"  onClick={()=>this.setViewIndex(1)}><i class="fas fa-user header-icon"></i> </a>
+                    <a className="menus-a" onClick={()=>this.setViewIndex(2)}><i class="fas fa-briefcase  header-icon"></i> </a>
+                    <a className="menus-a" onClick={()=>this.setViewIndex(3)}><i class="fas fa-envelope header-icon"></i> </a>
                     </div>
+
+                    <div className="social-mobile">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/tabrezprofile" target="_blank"><i className="fa fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/tabrezansari" target="_blank"> <i className="fa fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/tabrezprofile/" target="_blank"> <i className="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/tabrezansari_" target="_blank"><i className="fa fa-twitter"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
 
                 </div>
                 <div className="header-right">

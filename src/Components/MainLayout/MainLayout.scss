@@ -13,6 +13,9 @@
         width: 100%;
         
     }
+    i{
+        font-style: normal;
+    }
    
 
 }
@@ -71,6 +74,7 @@ button:focus {outline:0;}
           
         }
         .leftSocial{
+            display: none;
             width: 100% !important;
             left: 0rem;
             ul{

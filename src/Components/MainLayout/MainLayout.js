@@ -23,6 +23,13 @@ export default class MainLayout extends Component {
         this.setState({ viewIndex: idx });
     }
 
+    componentDidMount(){
+        $('body').click(function(){
+            $('#head-mobile').hide();
+        })
+        
+    }
+
 
     getHomeView = () => {
         return (
