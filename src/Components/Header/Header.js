@@ -19,7 +19,7 @@ showNav=()=>{
             <div className="header">
                 <img className="imgLogo" src={tabrez} />
                 <div className="menu-bar" onClick={()=>this.showNav()}>
-                 <i style={{fontStyle:'normal'}} class="fas fa-bars menu-mobile"></i>
+                 <i style={{fontStyle:'normal'}} class="fa fa-bars menu-mobile"></i>
                 </div>
                 <div id="head-mobile" className="header-mobile">
                     <div className="menus">
