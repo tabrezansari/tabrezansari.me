@@ -199,3 +199,18 @@
     }
   
 }
+@media only screen and (max-width: 768px) {
+    .devAbout{
+        width: 100% !important;
+        flex-direction: column !important;
+        .leftSide{
+            width: 100% !important;
+        }
+        .rightSide{
+            width: 100% !important;
+            margin-top: 2rem;
+            padding: 0px !important;
+        }
+    }
+
+}
