@@ -98,3 +98,16 @@
       padding: 1rem 2rem;
       text-decoration: none;
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
+
+@media only screen and (max-width: 768px) {
+  .devContact .contactHead {
+    font-size: 20px !important; }
+  .devContact .contactHead::before {
+    top: 0rem !important;
+    font-size: 20px !important; }
+  .devContact .getTouch {
+    font-size: 30px !important; }
+  .devContact .brDesc {
+    width: 100% !important; }
+  .devContact a .getTouchBtn {
+    margin-top: 1rem !important; } }
