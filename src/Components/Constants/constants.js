@@ -11,6 +11,10 @@ export const  tools=[
         "name":"Angular",
         "logo":'angular.svg'
     },
+    { "id":4,
+    "name":"React Native",
+    "logo":'react.svg'
+    },
     {   "id":4,
         "name":"Jquery",
         "logo":'jquery.svg'
