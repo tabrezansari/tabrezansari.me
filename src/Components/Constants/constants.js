@@ -11,13 +11,17 @@ export const  tools=[
         "name":"Angular",
         "logo":'angular.svg'
     },
-    { "id":4,
-    "name":"React Native",
-    "logo":'react.svg'
+        { "id":4,
+        "name":"React Native",
+        "logo":'react.svg'
     },
     {   "id":4,
         "name":"Jquery",
         "logo":'jquery.svg'
+    },
+    {   "id":4,
+        "name":"Nginx",
+        "logo":'ngin.svg'
     },
     {   "id":5,
         "name":"Apache",
