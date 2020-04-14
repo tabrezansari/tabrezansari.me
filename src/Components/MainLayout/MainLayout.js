@@ -12,17 +12,17 @@ export default class MainLayout extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      viewIndex: 0
+      viewIndex: 0,
     };
     this.viewHandler = this.viewHandler.bind(this);
   }
 
-  viewHandler = idx => {
+  viewHandler = (idx) => {
     this.setState({ viewIndex: idx });
   };
 
   componentDidMount() {
-    $("body").click(function() {
+    $("body").click(function () {
       $("#head-mobile").hide();
     });
   }
@@ -62,6 +62,9 @@ export default class MainLayout extends Component {
   render() {
     return (
       <div className="mainLayout">
+        <div id="large-header" style={{ position: "fixed" }}>
+          <canvas id="demo-canvas"></canvas>
+        </div>
         <Header viewHandler={this.viewHandler} />
         <div className="mainBody">{this.getViews()}</div>
         <div className="leftSocial">

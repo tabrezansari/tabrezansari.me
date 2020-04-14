@@ -7,7 +7,8 @@
     transform: translateY(0); } }
 
 @keyframes logoFadein {
-  0%, 50% {
+  0%,
+  50% {
     opacity: 0; }
   100% {
     opacity: 1; } }
@@ -23,8 +24,9 @@
     transform: scale(1); } }
 
 .header {
+  z-index: 1;
   overflow: hidden;
-  background-color: #0A192F;
+  background-color: #0a192f;
   padding: 20px 10px; }
   .header .menu-bar {
     float: right;
@@ -67,14 +69,15 @@
             cursor: pointer;
             text-decoration: none;
             transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
-          .header .header-mobile .social-mobile ul li a:hover, .header .header-mobile .social-mobile ul li :focus {
+          .header .header-mobile .social-mobile ul li a:hover,
+          .header .header-mobile .social-mobile ul li :focus {
             color: #ffb944;
             transform: translateY(-3px); }
       .header .header-mobile .social-mobile .vl {
         border-left: 2px solid #8892b0;
         height: 80px; }
   .header a {
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     float: left;
     cursor: pointer;
     color: white;
@@ -86,10 +89,10 @@
     margin-left: 1.5rem;
     animation: 1s ease-out 0s 1 showTabs; }
     .header a small {
-      color: #FFB944;
+      color: #ffb944;
       font-size: 13px; }
   .header .resumeBtn {
-    color: #FFB944;
+    color: #ffb944;
     background-color: transparent;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
     line-height: 1;
@@ -98,7 +101,7 @@
     font-size: 13px;
     border-width: 1px;
     border-style: solid;
-    border-color: #FFB944;
+    border-color: #ffb944;
     border-image: initial;
     border-radius: 3px;
     padding: 0.75rem 1rem;
@@ -108,14 +111,14 @@
     font-size: 25px;
     font-weight: bold; }
   .header .imgLogo {
-    -webkit-animation: 1s logoFadein 1  linear forwards;
-    animation: 1s  logoFadein 1 linear forwards;
+    -webkit-animation: 1s logoFadein 1 linear forwards;
+    animation: 1s logoFadein 1 linear forwards;
     width: 3.5rem;
     top: 1rem;
     left: 3.5rem;
     position: absolute; }
   .header a:hover {
-    color: #FFB944; }
+    color: #ffb944; }
   .header a.active {
     color: white; }
   .header .header-right {
@@ -130,7 +133,7 @@
       float: none; } }
 
 .meuns .menus-a {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   float: left;
   cursor: pointer;
   color: white;
@@ -142,7 +145,7 @@
   color: blue;
   animation: 1s ease-out 0s 1 showTabs; }
   .meuns .menus-a .header-icon {
-    color: #FFB944;
+    color: #ffb944;
     font-size: 2.5rem;
     font-style: normal !important;
     margin-bottom: 5px; }

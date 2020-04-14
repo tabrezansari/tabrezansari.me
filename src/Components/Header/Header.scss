@@ -1,176 +1,178 @@
 @keyframes showTabs {
-    0% {
-        opacity: 0;
-      transform: translateY(-100%);
-    }
-    100% {
-        opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
   }
-  @keyframes logoFadein {
-    0%, 50% { opacity: 0; }
-    100% {
-         opacity: 1; }
-       
-  } 
-  @keyframes FadeInTabs { 
-    0% {
-      opacity: 0;
-      transform: scale(.1);
-    }
-  
-    85% {
-      opacity: 1;
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+@keyframes logoFadein {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes FadeInTabs {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+
+  85% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .header {
-        overflow: hidden;
-        background-color: #0A192F;
-        padding: 20px 10px;   
-        .menu-bar{
-          float: right;
-          right: 20px;
-          top: 7px;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #0a192f;
+  padding: 20px 10px;
+  .menu-bar {
+    float: right;
+    right: 20px;
+    top: 7px;
+    cursor: pointer;
+    position: relative;
+    color: #fcb746;
+    display: none;
+  }
+  .header-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #162540;
+    z-index: 1;
+    display: none;
+
+    .social-mobile {
+      width: 100%;
+      padding: 8rem 0rem;
+      color: rgb(168, 178, 209);
+      ul {
+        animation: 1.5s ease-out 0s 1 vlinc;
+
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        list-style: none;
+        padding-left: 1rem;
+        width: 100%;
+        li {
+          transition-delay: 200ms;
           cursor: pointer;
-          position: relative;
-          color: #fcb746;
-          display: none;
-        }
-        .header-mobile{
-          position: absolute;
-          top: 0;
-          right: 0;
-          height: 100%;
-          background-color: #162540;
-          z-index: 1;
-          display: none;
-        
-          .social-mobile{
-            width: 100%;
-            padding: 8rem 0rem;
-            color: rgb(168, 178, 209);
-            ul{
-                animation: 1.5s ease-out 0s 1 vlinc;
-            
-                display: flex;
-                flex-direction: column;
-                -webkit-box-align: center;
-                list-style: none;
-                padding-left: 1rem;
-                width: 100%;
-                li{
-                    transition-delay: 200ms;
-                    cursor: pointer;
-                    padding: 15px;
-                    a{
-                        display: inline-block;
-                        text-decoration-skip-ink: auto;
-                        color: inherit;
-                        font-size: 15px;
-                        position: relative;
-                        cursor: pointer;
-                        text-decoration: none;
-                        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-            
-                    }
-                    a:hover,:focus 
-                    {
-                        color:#ffb944;
-            
-                        transform: translateY(-3px);
-                    }
-                }
-            }
-            .vl {
-                border-left: 2px solid #8892b0;
-                height: 80px;
-              }
-            }
-         
-        }
-        
-         a {
-            font-family: 'Roboto Mono', monospace;
-            float: left;
+          padding: 15px;
+          a {
+            display: inline-block;
+            text-decoration-skip-ink: auto;
+            color: inherit;
+            font-size: 15px;
+            position: relative;
             cursor: pointer;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            text-decoration: none;
-            font-size: 13px;
-            line-height: 20px;
-            margin-left: 1.5rem;
-            small{
-                color: #FFB944;
-                font-size: 13px;  
-            }
-                      
-            animation: 1s ease-out 0s 1 showTabs;
-        } 
-     
-         
-        .resumeBtn{
-            color: #FFB944;
-            background-color: transparent;
-            font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-            line-height: 1;
-            cursor: pointer;
-            margin-left: 10px;
-            font-size: 13px;
-            border-width: 1px;
-            border-style: solid;
-            border-color: #FFB944;
-            border-image: initial;
-            border-radius: 3px;
-            padding: 0.75rem 1rem;
             text-decoration: none;
             transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-        } 
-        a.logo {
-            font-size: 25px;
-            font-weight: bold;
-        }
-        .imgLogo{
-          -webkit-animation: 1s logoFadein 1  linear forwards;
-          animation:1s  logoFadein 1 linear forwards;
-          width: 3.5rem;
-          top: 1rem;
-          left: 3.5rem;
-          position: absolute;
-        }
-        
-        a:hover {
-            color: #FFB944;
-        }
-        a.active {
-            color: white;
-        }
-        .header-right {
-            float: right;
-            padding-right: 2rem;
-        }
+          }
+          a:hover,
+          :focus {
+            color: #ffb944;
 
-        @media screen and (max-width: 500px) {
-             a {
-            float: none;
-            display: block;
-            text-align: left;
-            }
-            
-            .header-right {
-            float: none;
-            }
+            transform: translateY(-3px);
+          }
         }
+      }
+      .vl {
+        border-left: 2px solid #8892b0;
+        height: 80px;
+      }
+    }
+  }
+
+  a {
+    font-family: "Roboto Mono", monospace;
+    float: left;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 1.5rem;
+    small {
+      color: #ffb944;
+      font-size: 13px;
+    }
+
+    animation: 1s ease-out 0s 1 showTabs;
+  }
+
+  .resumeBtn {
+    color: #ffb944;
+    background-color: transparent;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+      "Lucida Console", Monaco, monospace;
+    line-height: 1;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 13px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffb944;
+    border-image: initial;
+    border-radius: 3px;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+  a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .imgLogo {
+    -webkit-animation: 1s logoFadein 1 linear forwards;
+    animation: 1s logoFadein 1 linear forwards;
+    width: 3.5rem;
+    top: 1rem;
+    left: 3.5rem;
+    position: absolute;
+  }
+
+  a:hover {
+    color: #ffb944;
+  }
+  a.active {
+    color: white;
+  }
+  .header-right {
+    float: right;
+    padding-right: 2rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .header-right {
+      float: none;
+    }
+  }
 }
 
-.meuns{
+.meuns {
   .menus-a {
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     float: left;
     cursor: pointer;
     color: white;
@@ -180,66 +182,58 @@
     font-size: 13px;
     line-height: 20px;
     color: blue;
-    .header-icon{
-      color: #FFB944;
+    .header-icon {
+      color: #ffb944;
       font-size: 2.5rem;
       font-style: normal !important;
       margin-bottom: 5px;
-      
     }
-              
+
     animation: 1s ease-out 0s 1 showTabs;
-} 
-  
+  }
 }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-    .menu-bar{
-      display: block !important;
+  .menu-bar {
+    display: block !important;
+  }
+  .header {
+    .imgLogo {
+      width: 3rem;
+      left: 2rem;
     }
-      .header{
-          .imgLogo{
-            width: 3rem;
-            left: 2rem;
-          }
-          .header-right{
-              display: none;
-          }
-          a{
-            font-size: 20px !important;
-          }
-      }
-      .header-mobile{
-        width: 20%;
-        position: fixed !important;
-       
-        .social-mobile{
-          padding: 6rem 0rem !important;
-          ul{
-            padding-left: 0px !important;
-            li{
-            padding: 5px 0px !important;
-            }
-          }
+    .header-right {
+      display: none;
+    }
+    a {
+      font-size: 20px !important;
+    }
+  }
+  .header-mobile {
+    width: 20%;
+    position: fixed !important;
+
+    .social-mobile {
+      padding: 6rem 0rem !important;
+      ul {
+        padding-left: 0px !important;
+        li {
+          padding: 5px 0px !important;
         }
-       
       }
+    }
+  }
 
-      .meuns{
-
-        margin-top: 3rem !important;
-        
-      }
-      .menus-a{
-        text-align: left !important ;
-        padding: 20px 5px !important;
-        color: #fcb746 !important;
-    
-      }
-      .menus-a:nth-child(1){
-        margin-top: 3rem !important;
-
-      }
-  
+  .meuns {
+    margin-top: 3rem !important;
+  }
+  .menus-a {
+    text-align: left !important ;
+    padding: 20px 5px !important;
+    color: #fcb746 !important;
+  }
+  .menus-a:nth-child(1) {
+    margin-top: 3rem !important;
+  }
 }
