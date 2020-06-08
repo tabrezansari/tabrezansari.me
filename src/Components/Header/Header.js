@@ -107,9 +107,9 @@ export default class Header extends Component {
           <a onClick={() => this.setViewIndex(2)}>
             <small>03.</small> Experience
           </a>
-          <a onClick={() => this.setViewIndex(3)}>
+          {/* <a onClick={() => this.setViewIndex(3)}>
             <small>04.</small> Blogs
-          </a>
+          </a> */}
           <a onClick={() => this.setViewIndex(4)}>
             <small>05.</small> Contact
           </a>

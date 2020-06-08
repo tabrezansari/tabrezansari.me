@@ -4,7 +4,7 @@ import Home from "../Home/Home";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Experience from "../Experience/Experience";
-import Blogs from "../Blogs/Blogs";
+// import Blogs from "../Blogs/Blogs";
 import "./MainLayout.css";
 import $ from "jquery";
 
@@ -39,9 +39,9 @@ export default class MainLayout extends Component {
     return <About />;
   };
 
-  getBlogView = () => {
-    return <Blogs />;
-  };
+  // getBlogView = () => {
+  //   return <Blogs />;
+  // };
 
   getContactView = () => {
     return <Contact />;
@@ -55,8 +55,8 @@ export default class MainLayout extends Component {
         return this.getAboutView();
       case 2:
         return this.getExperienceView();
-      case 3:
-        return this.getBlogView();
+      // case 3:
+      //   return this.getBlogView();
       case 4:
         return this.getContactView();
       default:
