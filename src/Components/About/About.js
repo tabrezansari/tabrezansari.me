@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./About.css";
-import Skills from "../Skills/Skills";
-import $ from "jquery";
-import react from "../../Assets/skills/react.svg";
+
 import { tools, lang } from "../Constants/constants";
 export default class About extends Component {
   render() {
@@ -37,7 +35,7 @@ export default class About extends Component {
               <div className="tooltech">
                 <h3 className="toolHead">Tools &amp; Frameworks</h3>
                 <div className="skillsCont">
-                  {tools.map(data => (
+                  {tools.map((data) => (
                     <div className="skill">
                       <div className="skillImg">
                         <img
@@ -54,7 +52,7 @@ export default class About extends Component {
               <div className="tooltech">
                 <h3 className="toolHead">Programming Languages</h3>
                 <div className="skillsCont">
-                  {lang.map(data => (
+                  {lang.map((data) => (
                     <div className="skill">
                       <div className="skillImg">
                         <img

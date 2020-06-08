@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import "./Header.css";
 import Resume from "../../Assets/TabrezAnsari.pdf";
 import tabrez from "../../Assets/tabrez.png";
-import tabrezsvg from "../../Assets/tabrezsvg.svg";
-import { normalize } from "path";
+
 export default class Header extends Component {
-  setViewIndex = index => {
+  setViewIndex = (index) => {
     this.props.viewHandler(index);
   };
   showNav = () => {
@@ -25,16 +24,32 @@ export default class Header extends Component {
         </div>
         <div id="head-mobile" className="header-mobile">
           <div className="menus">
-            <a className="menus-a" onClick={() => this.setViewIndex(0)}>
+            <a
+              className="menus-a"
+              href="#"
+              onClick={() => this.setViewIndex(0)}
+            >
               <i className="fa fa-home header-icon"></i>
             </a>
-            <a className="menus-a" onClick={() => this.setViewIndex(1)}>
+            <a
+              href="#"
+              className="menus-a"
+              onClick={() => this.setViewIndex(1)}
+            >
               <i className="fa fa-user header-icon"></i>{" "}
             </a>
-            <a className="menus-a" onClick={() => this.setViewIndex(2)}>
+            <a
+              href="#"
+              className="menus-a"
+              onClick={() => this.setViewIndex(2)}
+            >
               <i className="fa fa-briefcase  header-icon"></i>{" "}
             </a>
-            <a className="menus-a" onClick={() => this.setViewIndex(3)}>
+            <a
+              href="#"
+              className="menus-a"
+              onClick={() => this.setViewIndex(3)}
+            >
               <i className="fa fa-envelope header-icon"></i>{" "}
             </a>
           </div>
@@ -45,12 +60,17 @@ export default class Header extends Component {
                 <a
                   href="https://www.facebook.com/tabrezprofile"
                   target="_blank"
+                  rel="noopener"
                 >
                   <i className="fa fa-facebook-square"></i>
                 </a>
               </li>
               <li>
-                <a href="https://github.com/tabrezansari" target="_blank">
+                <a
+                  href="https://github.com/tabrezansari"
+                  target="_blank"
+                  rel="noopener"
+                >
                   {" "}
                   <i className="fa fa-github"></i>
                 </a>
@@ -59,13 +79,18 @@ export default class Header extends Component {
                 <a
                   href="https://www.linkedin.com/in/tabrezprofile/"
                   target="_blank"
+                  rel="noopener"
                 >
                   {" "}
                   <i className="fa fa-linkedin"></i>
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/tabrezansari_" target="_blank">
+                <a
+                  href="https://twitter.com/tabrezansari_"
+                  rel="noopener"
+                  target="_blank"
+                >
                   <i className="fa fa-twitter"></i>
                 </a>
               </li>
@@ -83,9 +108,12 @@ export default class Header extends Component {
             <small>03.</small> Experience
           </a>
           <a onClick={() => this.setViewIndex(3)}>
-            <small>04.</small> Contact
+            <small>04.</small> Blogs
           </a>
-          <a href={Resume} target="_blank" className="resumeBtn">
+          <a onClick={() => this.setViewIndex(4)}>
+            <small>05.</small> Contact
+          </a>
+          <a href={Resume} target="_blank" rel="noopener" className="resumeBtn">
             RESUME
           </a>
         </div>

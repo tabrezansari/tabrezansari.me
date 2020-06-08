@@ -4,9 +4,9 @@ import Home from "../Home/Home";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Experience from "../Experience/Experience";
+import Blogs from "../Blogs/Blogs";
 import "./MainLayout.css";
 import $ from "jquery";
-import { thisExpression } from "@babel/types";
 
 export default class MainLayout extends Component {
   constructor(props) {
@@ -39,6 +39,10 @@ export default class MainLayout extends Component {
     return <About />;
   };
 
+  getBlogView = () => {
+    return <Blogs />;
+  };
+
   getContactView = () => {
     return <Contact />;
   };
@@ -47,16 +51,16 @@ export default class MainLayout extends Component {
     switch (this.state.viewIndex) {
       case 0:
         return this.getHomeView();
-        break;
       case 1:
         return this.getAboutView();
-        break;
       case 2:
         return this.getExperienceView();
-        break;
       case 3:
+        return this.getBlogView();
+      case 4:
         return this.getContactView();
-        break;
+      default:
+        return null;
     }
   };
   render() {
@@ -70,12 +74,20 @@ export default class MainLayout extends Component {
         <div className="leftSocial">
           <ul>
             <li>
-              <a href="https://www.facebook.com/tabrezprofile" target="_blank">
+              <a
+                href="https://www.facebook.com/tabrezprofile"
+                rel="noopener"
+                target="_blank"
+              >
                 <i className="fa fa-facebook-square"></i>
               </a>
             </li>
             <li>
-              <a href="https://github.com/tabrezansari" target="_blank">
+              <a
+                href="https://github.com/tabrezansari"
+                rel="noopener"
+                target="_blank"
+              >
                 {" "}
                 <i className="fa fa-github"></i>
               </a>
@@ -84,6 +96,7 @@ export default class MainLayout extends Component {
               <a
                 href="https://www.linkedin.com/in/tabrezprofile/"
                 target="_blank"
+                rel="noopener"
               >
                 {" "}
                 <i className="fa fa-linkedin"></i>
