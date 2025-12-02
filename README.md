@@ -5,7 +5,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/tabrezansari/tabrezansari.me">
+  <a href="https://github.com/tabrezansari/tabrezansari.io">
     <img src="src/Assets/tabrezsvg.svg" alt="Logo" width="100" height="100">
   </a>
 
@@ -17,11 +17,11 @@
     <br />
     <a href="https://tabrezansari.io" target="_blank>View Website</a>
     ·
-    <a href="https://github.com/tabrezansari/tabrezansari.me/issues" target="_blank>Report Bug</a>
+    <a href="https://github.com/tabrezansari/tabrezansari.io/issues" target="_blank>Report Bug</a>
     ·
-    <a href="https://github.com/tabrezansari/tabrezansari.me/issues" target="_blank>Request Feature</a>
+    <a href="https://github.com/tabrezansari/tabrezansari.io/issues" target="_blank>Request Feature</a>
   </p>
-                                                                              <a href="https//tabrezansari.me/" target="_blank" class="button">Visit Website</a>
+                                                                              <a href="https//tabrezansari.io/" target="_blank" class="button">Visit Website</a>
 
 </p>
 
