@@ -15,7 +15,7 @@
     An personal portfolio build with React
     <br />
     <br />
-    <a href="https://tabrezansari.me" target="_blank>View Website</a>
+    <a href="https://tabrezansari.io" target="_blank>View Website</a>
     ·
     <a href="https://github.com/tabrezansari/tabrezansari.me/issues" target="_blank>Report Bug</a>
     ·
